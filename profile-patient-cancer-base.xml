@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="http://uk-koeln.de/fhir/StructureDefinition/Patient/cancer-base" />
+  <version value="0.1" />
+  <name value="PatientCancerBase" />
+  <status value="draft" />
+  <description value="Patient mit identifizierenden Daten" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+  <derivation value="constraint" />
+</StructureDefinition>
