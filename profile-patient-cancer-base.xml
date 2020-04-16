@@ -4,6 +4,8 @@
   <version value="0.1" />
   <name value="PatientCancerBase" />
   <status value="draft" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <copyright value="HL7 Deutschland e.V." />
   <description value="Patient mit identifizierenden Daten" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />

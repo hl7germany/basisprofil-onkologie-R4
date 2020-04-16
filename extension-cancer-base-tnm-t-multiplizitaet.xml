@@ -6,7 +6,8 @@
   <title value="TNM-T Multiplizität" />
   <status value="draft" />
   <experimental value="true" />
-  <publisher value="Uniklinik Köln" />
+  <publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+  <copyright value="HL7 Deutschland e.V." />  
   <fhirVersion value="4.0.0" />
   <kind value="complex-type" />
   <abstract value="false" />
