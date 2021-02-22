@@ -74,22 +74,22 @@ Description:    "Profile for UICC TNM Observation."
 Instance: UICCTNM
 InstanceOf: ObservationUICCTNM
 Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
-* extension[ExampleEpisodeOfCare].valueReference =  Reference(Tumorerkrankung)
-* status = StatusCode#final
-* code = LOINC#75620-5 "TNM clinical staging before treatment panel Cancer"
+//* extension[ExampleEpisodeOfCare].valueReference =  Reference(Tumorerkrankung)
+* status = #final
+* code = LNC#75620-5 "TNM clinical staging before treatment panel Cancer"
 * subject = Reference(Beispielpatient)
 //* valueCodeableConcept = UICCCS#I "I"
 * component[TCodes].extension[0].valueCodeableConcept = UICC#c
 * component[TCodes].extension[0].url = TNMPRAEFIXCPU
-* component[TCodes].code = LOINC#21905-5
+* component[TCodes].code = LNC#21905-5
 * component[TCodes].valueCodeableConcept = TCode#T3
 * component[NCodes].extension[0].valueCodeableConcept = UICC#p
 * component[NCodes].extension[0].url = TNMPRAEFIXCPU
-* component[NCodes].code = LOINC#21906-3
+* component[NCodes].code = LNC#21906-3
 * component[NCodes].valueCodeableConcept = NCode#N1
 * component[MCodes].extension[0].valueCodeableConcept = UICC#c
 * component[MCodes].extension[0].url = TNMPRAEFIXCPU
-* component[MCodes].code = LOINC#21907-1
+* component[MCodes].code = LNC#21907-1
 * component[MCodes].valueCodeableConcept = MCode#M2
 * component[a-symbol].valueCodeableConcept = TNMPRAEFIXAOID#a
 * component[y-symbol].valueCodeableConcept = UICC#y

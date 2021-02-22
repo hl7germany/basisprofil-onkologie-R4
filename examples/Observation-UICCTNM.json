@@ -10,7 +10,8 @@
     "coding": [
       {
         "code": "75620-5",
-        "system": "http://loinc.org"
+        "system": "http://loinc.org",
+        "display": "TNM clinical staging before treatment panel Cancer"
       }
     ]
   },
@@ -232,6 +233,7 @@
       }
     }
   ],
+  "status": "final",
   "subject": {
     "reference": "Beispielpatient"
   }
