@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TnmPraefixSVS",
+  "id": "tnm-qualifier-s",
+  "title": "TNM Praefix S",
+  "description": "Includes codes for TNM praefix S (Serumtumormarker).",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-qualifier-s",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.276.0.76.3.1.131.1.5.1",
+        "concept": [
+          {
+            "code": "s",
+            "display": "S"
+          }
+        ]
+      }
+    ]
+  }
+}

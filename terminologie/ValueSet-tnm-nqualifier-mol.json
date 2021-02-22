@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TNMnqualifiermol",
+  "id": "tnm-nqualifier-mol",
+  "title": "TNM-N Qualifier mol",
+  "description": "Includes the following UICC codes for TNM-N Qualifier mol.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-nqualifier-mol",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "mol+",
+            "display": "mol+"
+          },
+          {
+            "code": "mol+",
+            "display": "mol-"
+          }
+        ]
+      }
+    ]
+  }
+}

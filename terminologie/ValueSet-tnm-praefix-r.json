@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TnmPraefixRVS",
+  "id": "tnm-praefix-r",
+  "title": "TNM praefix r",
+  "description": "Includes the following UICC codes for TNM praefix r.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-praefix-r",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "r",
+            "display": "r"
+          }
+        ]
+      }
+    ]
+  }
+}
