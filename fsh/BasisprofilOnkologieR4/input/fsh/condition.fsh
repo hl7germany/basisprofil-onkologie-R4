@@ -18,4 +18,3 @@ Description: "Ein Beispiel für eine Krebs-Diagnose"
 * code = ICD10GM#C25 "Bösartige Neubildung des Pankreas"
 * subject = Reference(Beispielpatient)
 * onsetDateTime = "2020-03-11T09:40:27+01:00"
-* note.text = "Condition has been discovered on a non-related examination"

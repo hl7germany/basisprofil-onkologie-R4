@@ -33,10 +33,5 @@
   "subject": {
     "reference": "Patient/Beispielpatient"
   },
-  "onsetDateTime": "2020-03-11T09:40:27+01:00",
-  "note": [
-    {
-      "text": "Condition has been discovered on a non-related examination"
-    }
-  ]
+  "onsetDateTime": "2020-03-11T09:40:27+01:00"
 }
