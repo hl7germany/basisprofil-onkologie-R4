@@ -63,14 +63,11 @@ Description:    "Profile for UICC TNM Observation."
 * component[Pn-symbol].valueCodeableConcept from TnmPraefixVVS
 * component contains LK_untersucht 0..1
 * component[LK_untersucht].code = LNC#21894-1 "Regional lymph nodes examined [#] Specimen"
-* component[LK_untersucht].valueQuantity.system = UCUM
-* component[LK_untersucht].valueQuantity.value only decimal
-* component[LK_untersucht].valueQuantity.unit = "1-untersucht, 0-nicht untersucht"
+* component[LK_untersucht].value[x] only boolean
 * component contains LK_befallen 0..1
 * component[LK_befallen].code = LNC#21893-3 "Regional lymph nodes positive [#] Specimen"
-* component[LK_befallen].valueQuantity.system = UCUM
-* component[LK_befallen].valueQuantity.value only decimal
-* component[LK_befallen].valueQuantity.unit = "1-befallen, 0-nicht befallen"
+* component[LK_befallen].value[x] only boolean
+
 
 Instance: UICCTNM
 InstanceOf: ObservationUICCTNM
@@ -97,5 +94,5 @@ Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
 * component[r-symbol].valueCodeableConcept = UICC#r
 * component[S-symbol].valueCodeableConcept = TNMPRAEFIXS#s
 * component[L-symbol].valueCodeableConcept = TNMPRAEFIXS#l
-* component[LK_untersucht].valueQuantity.value = 1
-* component[LK_befallen].valueQuantity.value = 0
+* component[LK_untersucht].valueBoolean = true
+* component[LK_befallen].valueBoolean = false
