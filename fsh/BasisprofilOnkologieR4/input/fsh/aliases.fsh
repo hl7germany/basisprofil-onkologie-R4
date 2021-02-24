@@ -3,8 +3,7 @@ Alias:   LNC = http://loinc.org
 Alias:   SCT = http://snomed.info/sct
 Alias:   UCUM = http://unitsofmeasure.org
 Alias:   NCIT = http://ncithesaurus.nci.nih.gov
-Alias:   ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
-Alias:   ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
+Alias:   ICD10GM = http://fhir.de/CodeSystem/dimdi/icd-10-gm
 Alias:   ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias:   RXN = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias:   CPT = http://www.ama-assn.org/go/cpt
@@ -14,7 +13,6 @@ Alias:   CLINVAR = http://www.ncbi.nlm.nih.gov/clinvar
 Alias:   HGNC = http://www.genenames.org   // MK 10-19-2020: changed to align with FHIR-- see https://www.hl7.org/fhir/terminologies-systems.html
 Alias:   HGVS = http://varnomen.hgvs.org
 Alias:   SO = http://sequenceontology.org
-Alias:   OmbRaceCat = urn:oid:2.16.840.1.113883.6.238
 
 // From Terminology.hl7.org
 Alias:   IDTYPE = http://terminology.hl7.org/CodeSystem/v2-0203

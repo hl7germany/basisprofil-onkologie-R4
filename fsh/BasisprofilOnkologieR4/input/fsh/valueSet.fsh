@@ -154,3 +154,9 @@ ValueSet: HistoGradeVS
 Id: histo-grading
 Title: "Histologie Grading Codes"
 * include codes from system HistoGrade
+
+ValueSet: ICD10GMVS
+Id: icd-10-gm-vs
+Title: "ICD-10-GM"
+Description: "Dieses ValueSet enthält alle ICD 10 Codes der deutschen Modifikation"
+* include codes from system ICD10GM
