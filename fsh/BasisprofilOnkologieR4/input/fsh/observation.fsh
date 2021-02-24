@@ -4,6 +4,7 @@ Title: "Tumor Histologie und Morphologie"
 Parent: Observation
 * code = LNC#59847-4
 * bodySite from ICDO3Morphologie (required)
+* subject only Reference(Patient or Group)
 * value[x] only CodeableConcept
 * value[x] from ICDO3Topologie (required)
 
