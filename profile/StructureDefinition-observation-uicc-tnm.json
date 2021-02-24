@@ -581,25 +581,13 @@
         }
       },
       {
-        "id": "Observation.component:LK_untersucht.valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "min": 0,
-        "max": "1",
+        "id": "Observation.component:LK_untersucht.value[x]",
+        "path": "Observation.component.value[x]",
         "type": [
           {
-            "code": "Quantity"
+            "code": "boolean"
           }
         ]
-      },
-      {
-        "id": "Observation.component:LK_untersucht.valueQuantity.unit",
-        "path": "Observation.component.valueQuantity.unit",
-        "patternString": "1-untersucht, 0-nicht untersucht"
-      },
-      {
-        "id": "Observation.component:LK_untersucht.valueQuantity.system",
-        "path": "Observation.component.valueQuantity.system",
-        "patternUri": "http://unitsofmeasure.org"
       },
       {
         "id": "Observation.component:LK_befallen",
@@ -622,25 +610,13 @@
         }
       },
       {
-        "id": "Observation.component:LK_befallen.valueQuantity",
-        "path": "Observation.component.valueQuantity",
-        "min": 0,
-        "max": "1",
+        "id": "Observation.component:LK_befallen.value[x]",
+        "path": "Observation.component.value[x]",
         "type": [
           {
-            "code": "Quantity"
+            "code": "boolean"
           }
         ]
-      },
-      {
-        "id": "Observation.component:LK_befallen.valueQuantity.unit",
-        "path": "Observation.component.valueQuantity.unit",
-        "patternString": "1-befallen, 0-nicht befallen"
-      },
-      {
-        "id": "Observation.component:LK_befallen.valueQuantity.system",
-        "path": "Observation.component.valueQuantity.system",
-        "patternUri": "http://unitsofmeasure.org"
       }
     ]
   }

@@ -214,9 +214,7 @@
           }
         ]
       },
-      "valueQuantity": {
-        "value": 1
-      }
+      "valueBoolean": true
     },
     {
       "code": {
@@ -228,13 +226,11 @@
           }
         ]
       },
-      "valueQuantity": {
-        "value": 0
-      }
+      "valueBoolean": false
     }
   ],
   "status": "final",
   "subject": {
-    "reference": "Beispielpatient"
+    "reference": "Patient/Beispielpatient"
   }
 }

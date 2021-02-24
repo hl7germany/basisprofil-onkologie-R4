@@ -1,0 +1,39 @@
+{
+  "resourceType": "EpisodeOfCare",
+  "id": "Tumorerkrankung",
+  "meta": {
+    "profile": [
+      "http://fhir.de/onkologie/StructureDefinition/episode-of-care-krebserkrankung"
+    ]
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "C16213",
+          "system": "http://ncithesaurus.nci.nih.gov",
+          "display": "Cancer Diagnosis"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "diagnosis": [
+    {
+      "condition": {
+        "reference": "Diagnose"
+      },
+      "rank": 1,
+      "role": {
+        "coding": [
+          {
+            "code": "CC"
+          }
+        ]
+      }
+    }
+  ],
+  "patient": {
+    "reference": "Patient/Beispielpatient"
+  }
+}
