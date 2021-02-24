@@ -96,3 +96,13 @@ Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
 * component[L-symbol].valueCodeableConcept = TNMPRAEFIXS#l
 * component[LK_untersucht].valueBoolean = true
 * component[LK_befallen].valueBoolean = false
+
+
+Profile: HistopathologischesGrading
+Id: histopathologisches-grading
+Title: "HistopathologischesGrading"
+Parent: Observation
+* code = LNC#33732-9
+* subject only Reference(Patient or Group)
+* value[x] only CodeableConcept
+* value[x] from ICDO3Topologie (required)

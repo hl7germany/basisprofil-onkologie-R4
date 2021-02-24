@@ -5,7 +5,7 @@ Description: "UICC-Klassifikation zum Staging einer Krebserkrankung."
 * ^version = "2020"
 * ^status = #draft
 * ^experimental = false
-* ^publisher = "MOLIT gGmbH"
+* ^publisher = "HL7 Germany"
 * ^copyright = "Union for International Cancer Control (UICC)"
 * ^content = #complete
 * #okkult" "okkult"
@@ -40,3 +40,19 @@ Description: "UICC-Klassifikation zum Staging einer Krebserkrankung."
 * #IVA "IVA"
 * #IVB "IVB"
 * #IVC "IVC"
+
+CodeSystem: HistoGrade
+Title: "Histopathologische Grading Codes"
+Description: "Die histopathologische Einstufung des invasiven Karzinoms "
+* ^meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+* ^version = "2020"
+* ^status = #draft
+* ^experimental = false
+* ^publisher = "HL7 Germany"
+* ^copyright = "TODO"
+* ^content = #complete
+* #G0 "Grading nicht vorgesehen"
+* #G1 "gut differenziert" "hochdifferenzierter Tumor mit niederem Malignitätsgrad"
+* #G2 "mäßig differenziert" "mittelhochdifferenzierter Tumor mit mittlerem Malignitätsgrad"
+* #G3 "schlecht / gering differenziert" "wenig differenzierter Tumor mit hohem Malignitätsgrad"
+* #G4 "undifferenzierter Tumor mit sehr hohem Malignitätsgrad" "nicht bei allen Tumorentitäten"

@@ -149,3 +149,8 @@ Id: tnm-t-qualifier-m
 Title: "TNM-T Qualifier m"
 Description: "Includes the following UICC codes for TNM-T Qualifier m."
 * UICC#m "m"
+
+ValueSet: HistoGradeVS
+Id: histo-grading
+Title: "Histologie Grading Codes"
+* include codes from system HistoGrade
