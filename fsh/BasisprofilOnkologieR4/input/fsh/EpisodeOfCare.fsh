@@ -12,7 +12,7 @@ Instance: Tumorerkrankung
 InstanceOf: Krebserkrankung
 Description: "Ein Beispiel für die Episode einer Tumorerkrankung."
 * status = #active
-* diagnosis.condition = Reference(Diagnose)
+* diagnosis.condition = Reference(KrebsDiagnosePankreas)
 * diagnosis.rank = 1
 * diagnosis.role = #CC
 * patient = Reference(Beispielpatient)

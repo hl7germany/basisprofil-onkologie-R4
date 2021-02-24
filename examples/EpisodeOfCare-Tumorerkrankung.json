@@ -21,7 +21,7 @@
   "diagnosis": [
     {
       "condition": {
-        "reference": "Diagnose"
+        "reference": "Condition/KrebsDiagnosePankreas"
       },
       "rank": 1,
       "role": {
