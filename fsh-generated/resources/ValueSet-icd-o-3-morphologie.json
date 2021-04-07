@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ICDO3Morphologie",
+  "id": "icd-o-3-morphologie",
+  "title": "Morphologie Codes des ICD-O-3 CodeSystems.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "regex",
+            "value": "^\\d\\S*$"
+          }
+        ]
+      }
+    ]
+  }
+}

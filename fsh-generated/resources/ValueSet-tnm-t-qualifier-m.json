@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "TNMTQualifierM",
+  "id": "tnm-t-qualifier-m",
+  "title": "TNM-T Qualifier m",
+  "description": "Includes the following UICC codes for TNM-T Qualifier m.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-t-qualifier-m",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "m",
+            "display": "m"
+          }
+        ]
+      }
+    ]
+  }
+}

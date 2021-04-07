@@ -1,0 +1,39 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "WeitereKlassifikation",
+  "url": "http://fhir.de/onkologie/StructureDefinition/WeitereKlassifikation",
+  "version": "0.1.0",
+  "name": "WeitereKlassifikation",
+  "title": "Weitere Klassifikation",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "https://gematik.de/fhir/IsiK/StructureDefinition/IsiKDiagnose",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.extension:Fall",
+        "path": "Condition.extension",
+        "sliceName": "Fall",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "min": 1
+      }
+    ]
+  }
+}

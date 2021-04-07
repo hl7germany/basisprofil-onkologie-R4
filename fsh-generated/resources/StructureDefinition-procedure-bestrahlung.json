@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "procedure-bestrahlung",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://fhir.de/onkologie/StructureDefinition/procedure-bestrahlung",
+  "version": "0.1.0",
+  "name": "ProcedureBestrahlung",
+  "title": "Radiation procedure",
+  "status": "active",
+  "description": "Profile on Procedure for radiation therapy.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.extension",
+        "path": "Procedure.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Procedure.extension:episodeOfCare",
+        "path": "Procedure.extension",
+        "sliceName": "episodeOfCare",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.extension:bestrahlungIntent",
+        "path": "Procedure.extension",
+        "sliceName": "bestrahlungIntent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/onkologie/StructureDefinition/TreatmentIntent"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "108290001",
+              "system": "http://snomed.info/sct",
+              "display": "Radiation oncology AND/OR radiotherapy (procedure)"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "33195004",
+              "system": "http://snomed.info/sct",
+              "display": "Teleradiotherapy procedure"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.performedDateTime",
+        "path": "Procedure.performedDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performedPeriod",
+        "path": "Procedure.performedPeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      }
+    ]
+  }
+}

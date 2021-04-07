@@ -1,0 +1,124 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "procedure-op",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://fhir.de/onkologie/StructureDefinition/procedure-op",
+  "version": "0.1.0",
+  "name": "ProcedureOP",
+  "title": "Op",
+  "status": "active",
+  "description": "Profile für TumorOPs",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.extension",
+        "path": "Procedure.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Procedure.extension:episodeOfCare",
+        "path": "Procedure.extension",
+        "sliceName": "episodeOfCare",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.category",
+        "path": "Procedure.category",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "387713003",
+              "system": "http://snomed.info/sct",
+              "display": "Surgical procedure"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "type": [
+          {
+            "code": "Coding",
+            "profile": [
+              "http://fhir.de/StructureDefinition/CodingOPS"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Procedure.performedDateTime",
+        "path": "Procedure.performedDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
