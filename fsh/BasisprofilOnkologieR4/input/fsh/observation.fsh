@@ -1,5 +1,4 @@
 Profile: TumorHistologieMorphologie
-Id: tumor-histologie-morphologie
 Title: "Tumor Histologie und Morphologie"
 Parent: Observation
 * code = LNC#59847-4
@@ -16,18 +15,15 @@ InstanceOf: TumorHistologieMorphologie
 
 Profile:        ObservationUICCTNM
 Parent:         Observation
-Id:             observation-uicc-tnm
 Title:          "Observation-UICC-TNM"
 Description:    "Profile for UICC TNM Observation."
 * extension contains WorkFlowEpisodeOfCare named Fall 0..1
 * code 1..1
-* code only CodeableConcept
-* code = LNC#75620-5
+* code = SCT#260879005
 * valueCodeableConcept from UICCVS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
-// TODO: Extension für Components (Lymphknoten befallen, Lymphknoten untersucht, ...)
 * component contains TCodes 0..1
 * component[TCodes].code = LNC#21905-5
 * component[TCodes].extension contains PraefixCPU named praefixCpu 0..1
@@ -74,7 +70,6 @@ InstanceOf: ObservationUICCTNM
 Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
 //* extension[ExampleEpisodeOfCare].valueReference =  Reference(Tumorerkrankung)
 * status = #final
-* code = LNC#75620-5 "TNM clinical staging before treatment panel Cancer"
 * subject = Reference(Beispielpatient)
 //* valueCodeableConcept = UICCCS#I "I"
 * component[TCodes].extension[0].valueCodeableConcept = UICC#c
@@ -96,13 +91,3 @@ Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
 * component[L-symbol].valueCodeableConcept = TNMPRAEFIXS#l
 * component[LK_untersucht].valueBoolean = true
 * component[LK_befallen].valueBoolean = false
-
-
-Profile: HistopathologischesGrading
-Id: histopathologisches-grading
-Title: "HistopathologischesGrading"
-Parent: Observation
-* code = LNC#33732-9
-* subject only Reference(Patient or Group)
-* value[x] only CodeableConcept
-* value[x] from ICDO3Topologie (required)

@@ -160,3 +160,17 @@ Id: icd-10-gm-vs
 Title: "ICD-10-GM"
 Description: "Dieses ValueSet enthält alle ICD 10 Codes der deutschen Modifikation"
 * include codes from system ICD10GM
+
+ValueSet:		TreatmentIntentVS
+Id: treatment-intent-vs
+Title: "Treatment Intent Value Set"
+Description:	"The purpose of a treatment."
+* ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
+* SCT#373808002 "Curative - procedure intent"
+* SCT#363676003 "Palliative - procedure intent"
+* SCT#399707004 "Supportive - procedure intent"
+* SCT#261004008 "Diagnostic intent"
+* SCT#129428001 "Preventive - intent"
+* SCT#429892002 "Guidance intent"
+* SCT#360156006 "Screening - procedure intent"
+* SCT#447295008 "Forensic intent"

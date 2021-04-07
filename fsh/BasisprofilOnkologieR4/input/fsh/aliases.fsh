@@ -48,3 +48,12 @@ Alias: DATAABSENTREASONCS = http://terminology.hl7.org/CodeSystem/data-absent-re
 Alias: INTERPRETATIONCS = http://terminology.hl7.org/CodeSystem/v2-0078
 Alias: PROVISIONCS = http://hl7.org/fhir/consent-provision-type
 Alias: TNMPRAEFIXCPU = http://molit.eu/fhir/vitu/Extension/praefixcpu
+
+//BasisProfile-DE
+Alias: ICD10Coding = http://fhir.de/StructureDefinition/CodingICD10GM
+Alias: CodingOPS = http://fhir.de/StructureDefinition/CodingOPS
+Alias: ICD10Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
+
+//ISIK
+Alias: IsikDiagnose = https://gematik.de/fhir/IsiK/StructureDefinition/IsiKDiagnose
+
