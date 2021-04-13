@@ -21,9 +21,32 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/Diagnose"
+        },
+        "name": "Krebsdiagnose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EncounterTMBCase"
+        },
+        "name": "Tumor Board Case Review",
+        "description": "Profile of Encounter for a patient case review within molecular tumor boards.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EncounterTMBConference"
+        },
+        "name": "Tumor Board Conference",
+        "description": "Profile of Encounter for molecular tumor board conferences.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/KrebsDiagnose"
         },
-        "name": "Krebs Diagnose",
+        "name": "Krebsdiagnose",
         "exampleBoolean": false
       },
       {
@@ -39,6 +62,21 @@
           "reference": "StructureDefinition/Nebenwirkung"
         },
         "name": "Nebenwirkung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ObservationECOG"
+        },
+        "name": "ObservationECOG",
+        "description": "Profile to represent ECOG State",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ObservationKarnofskyIndex"
+        },
+        "name": "ObservationKarnofskyIndex",
         "exampleBoolean": false
       },
       {
@@ -74,6 +112,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/TumorstatusFernmetastasen"
+        },
+        "name": "TumorstatusFernmetastasen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/WeitereKlassifikation"
         },
         "name": "Weitere Klassifikation",
@@ -101,6 +146,14 @@
         },
         "name": "Intent Behandlung",
         "description": "Intent der Behandlung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ECOGPerformanceStatusVS"
+        },
+        "name": "ECOGPerformanceStatusVS",
+        "description": "ECOG Performance Status (Level 0-5).",
         "exampleBoolean": false
       },
       {
@@ -299,6 +352,22 @@
         "name": "KrebsDiagnosePankreas",
         "description": "Ein Beispiel für eine Krebs-Diagnose",
         "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/KrebsDiagnose"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/TMBFall"
+        },
+        "name": "TMBFall",
+        "description": "Ein Beispiel für ein Encounter welcher einen MTB Fall innerhalb einer MTB Konferenz abbildet.",
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/EncounterTMBCase"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/TMBKonferenz"
+        },
+        "name": "TMBKonferenz",
+        "description": "Ein Beispiel für eine MTB Konferenz.",
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/EncounterTMBConference"
       },
       {
         "reference": {

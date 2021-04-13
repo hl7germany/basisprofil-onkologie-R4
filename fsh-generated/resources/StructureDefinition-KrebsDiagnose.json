@@ -4,7 +4,7 @@
   "url": "http://fhir.de/onkologie/StructureDefinition/KrebsDiagnose",
   "version": "0.1.0",
   "name": "KrebsDiagnose",
-  "title": "Krebs Diagnose",
+  "title": "Krebsdiagnose",
   "status": "active",
   "fhirVersion": "4.0.1",
   "kind": "resource",

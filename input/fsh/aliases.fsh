@@ -1,5 +1,5 @@
 // External Code Systems
-Alias:   LNC = http://loinc.org
+Alias:   LNC = http://LNC.org
 Alias:   SCT = http://snomed.info/sct
 Alias:   UCUM = http://unitsofmeasure.org
 Alias:   NCIT = http://ncithesaurus.nci.nih.gov

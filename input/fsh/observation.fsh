@@ -91,3 +91,32 @@ Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
 * component[L-symbol].valueCodeableConcept = TNMPRAEFIXS#l
 * component[LK_untersucht].valueBoolean = true
 * component[LK_befallen].valueBoolean = false
+
+Profile: TumorstatusFernmetastasen
+Parent: Observation
+* code = SCT#371497001
+* bodySite from ICDO3Morphologie (required)
+* subject only Reference(Patient or Group)
+* value[x] only CodeableConcept
+//todo migrate VS:
+* value[x] from http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/tumorstatus-fernmetastasen (required)
+
+Profile:        ObservationECOG
+Parent:         Observation
+Description:    "Profile to represent ECOG State"
+* extension contains WorkFlowEpisodeOfCare named Fall 0..1 MS and Histology named Histologie 0..1 MS
+* code = LNC#89247-1 "ECOG Performance Status score"
+* subject 1..1
+* subject only Reference(Patient)
+* valueCodeableConcept from ECOGPerformanceStatusVS
+
+
+Profile:        ObservationKarnofskyIndex
+Parent:         Observation
+* extension contains WorkFlowEpisodeOfCare named Fall 0..1 MS and Histology named Histologie 0..1 MS
+* code = LNC#89243-0 "Karnofsky Performance Status score"
+* subject 1..1
+* subject only Reference(Patient)
+* value[x] only Ratio
+* valueRatio.denominator.value = 100
+

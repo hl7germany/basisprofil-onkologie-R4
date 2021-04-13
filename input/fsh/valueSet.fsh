@@ -174,3 +174,12 @@ Description:	"The purpose of a treatment."
 * SCT#429892002 "Guidance intent"
 * SCT#360156006 "Screening - procedure intent"
 * SCT#447295008 "Forensic intent"
+
+ValueSet: ECOGPerformanceStatusVS
+Description: "ECOG Performance Status (Level 0-5)."
+* LNC#LA9622-7 "ECOG 0 (Normale, uneingeschränkte Aktivität wie vor der Erkrankung)"
+* LNC#LA9623-5 "ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)"
+* LNC#LA9624-3 "ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)"
+* LNC#LA9625-0 "ECOG 3: (Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden)"
+* LNC#LA9626-8 "ECOG 4: (Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden)"
+* LNC#LA9627-6 "ECOG 5: (Tod)"
