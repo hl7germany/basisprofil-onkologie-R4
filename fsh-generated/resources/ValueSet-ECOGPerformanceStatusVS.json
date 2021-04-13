@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ECOGPerformanceStatusVS",
+  "id": "ECOGPerformanceStatusVS",
+  "description": "ECOG Performance Status (Level 0-5).",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/ECOGPerformanceStatusVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://LNC.org",
+        "concept": [
+          {
+            "code": "LA9622-7",
+            "display": "ECOG 0 (Normale, uneingeschränkte Aktivität wie vor der Erkrankung)"
+          },
+          {
+            "code": "LA9623-5",
+            "display": "ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)"
+          },
+          {
+            "code": "LA9624-3",
+            "display": "ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)"
+          },
+          {
+            "code": "LA9625-0",
+            "display": "ECOG 3: (Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden)"
+          },
+          {
+            "code": "LA9626-8",
+            "display": "ECOG 4: (Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden)"
+          },
+          {
+            "code": "LA9627-6",
+            "display": "ECOG 5: (Tod)"
+          }
+        ]
+      }
+    ]
+  }
+}

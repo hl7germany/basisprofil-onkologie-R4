@@ -1,0 +1,110 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "EncounterTMBCase",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Management"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://fhir.de/onkologie/StructureDefinition/EncounterTMBCase",
+  "version": "0.1.0",
+  "name": "EncounterTMBCase",
+  "title": "Tumor Board Case Review",
+  "status": "active",
+  "description": "Profile of Encounter for a patient case review within molecular tumor boards.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "patternCoding": {
+          "code": "VR"
+        }
+      },
+      {
+        "id": "Encounter.type",
+        "path": "Encounter.type",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Encounter.serviceType",
+        "path": "Encounter.serviceType",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "C159520",
+              "system": "http://ncithesaurus.nci.nih.gov",
+              "display": "Patient Case Review"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Encounter.subject",
+        "path": "Encounter.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.partOf",
+        "path": "Encounter.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.de/onkologie/StructureDefinition/EncounterTMBConference"
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "resourceType": "Encounter",
+  "id": "TMBKonferenz",
+  "meta": {
+    "profile": [
+      "http://fhir.de/onkologie/StructureDefinition/EncounterTMBConference"
+    ]
+  },
+  "status": "planned",
+  "class": {
+    "code": "VR"
+  }
+}

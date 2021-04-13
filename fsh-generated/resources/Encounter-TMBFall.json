@@ -1,0 +1,19 @@
+{
+  "resourceType": "Encounter",
+  "id": "TMBFall",
+  "meta": {
+    "profile": [
+      "http://fhir.de/onkologie/StructureDefinition/EncounterTMBCase"
+    ]
+  },
+  "class": {
+    "code": "VR"
+  },
+  "status": "planned",
+  "subject": {
+    "reference": "Patient/Beispielpatient"
+  },
+  "partOf": {
+    "reference": "Encounter/TMBFall"
+  }
+}
