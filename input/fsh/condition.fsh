@@ -1,4 +1,6 @@
 Alias: CodingICD10GM =  http://fhir.de/StructureDefinition/CodingICD10GM
+Alias: DiagnoseSicherheit = http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit
+Alias: Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
 
 //TODO: VS filtering only Cancer ICD codes
 Profile:        KrebsDiagnose
@@ -6,7 +8,9 @@ Parent:         Condition
 Title:          "Krebsdiagnose"
 * extension contains WorkFlowEpisodeOfCare named Fall 0..1 MS and Histology named Histologie 0..1 MS
 * clinicalStatus 1..1
+* code 1..1
 * code.coding only CodingICD10GM
+* code.extension contains DiagnoseSicherheit named DiagnoseSicherheit 0..1 MS and Seitenlokalisation named Seitenlokalisation 0..1 MS
 * subject only Reference(Patient or Group)
 * note MS
 

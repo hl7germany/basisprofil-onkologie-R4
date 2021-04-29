@@ -2,7 +2,7 @@ Profile:        EncounterTMBConference
 Parent:         Encounter
 Title:          "Tumor Board Conference"
 Description:    "Profile of Encounter for molecular tumor board conferences."
-* type 1..1 MS
+* type = NCIT#C93304
 * serviceType = NCIT#C93304 "Tumor Board Review"
 
 Profile:        EncounterTMBCase
@@ -10,8 +10,7 @@ Parent:         Encounter
 Title:          "Tumor Board Case Review"
 Description:    "Profile of Encounter for a patient case review within molecular tumor boards."
 * class = #VR
-* serviceType = NCIT#C159520 "Patient Case Review"
-* type  1..1 MS
+* type = NCIT#C159520 "Patient Case Review"
 * subject 1..1
 * subject only Reference(Patient)
 * partOf only Reference(EncounterTMBConference)

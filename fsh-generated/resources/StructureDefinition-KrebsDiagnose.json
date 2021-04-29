@@ -108,6 +108,43 @@
         "min": 1
       },
       {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "min": 1
+      },
+      {
+        "id": "Condition.code.extension:DiagnoseSicherheit",
+        "path": "Condition.code.extension",
+        "sliceName": "DiagnoseSicherheit",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.extension:Seitenlokalisation",
+        "path": "Condition.code.extension",
+        "sliceName": "Seitenlokalisation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/seitenlokalisation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Condition.code.coding",
         "path": "Condition.code.coding",
         "type": [
