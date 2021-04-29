@@ -9,23 +9,9 @@
   "fhirVersion": [
     "4.0.1"
   ],
-  "dependsOn": [
-    {
-      "packageId": "de.basisprofil.r4",
-      "version": "1.0.0-alpha1",
-      "uri": "http://fhir.de/ImplementationGuide/basisprofil-de-r4",
-      "id": "de_basisprofil_r4"
-    }
-  ],
+  "dependsOn": [],
   "definition": {
     "resource": [
-      {
-        "reference": {
-          "reference": "StructureDefinition/Diagnose"
-        },
-        "name": "Krebsdiagnose",
-        "exampleBoolean": false
-      },
       {
         "reference": {
           "reference": "StructureDefinition/EncounterTMBCase"
@@ -84,7 +70,7 @@
           "reference": "StructureDefinition/ObservationUICCTNM"
         },
         "name": "Observation-UICC-TNM",
-        "description": "Profile for UICC TNM Observation.",
+        "description": "Profil für UICC TNM Observation.",
         "exampleBoolean": false
       },
       {

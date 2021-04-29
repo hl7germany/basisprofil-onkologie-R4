@@ -1,18 +1,12 @@
-Profile:        Diagnose
-Parent:         IsikDiagnose
-Title:          "Krebsdiagnose"
-* extension contains WorkFlowEpisodeOfCare named Fall 0..1 MS
-* clinicalStatus 1..1
-* subject only Reference(Patient or Group)
-* note MS
+Alias: CodingICD10GM =  http://fhir.de/StructureDefinition/CodingICD10GM
 
 //TODO: VS filtering only Cancer ICD codes
 Profile:        KrebsDiagnose
-Parent:         IsikDiagnose
+Parent:         Condition
 Title:          "Krebsdiagnose"
 * extension contains WorkFlowEpisodeOfCare named Fall 0..1 MS and Histology named Histologie 0..1 MS
 * clinicalStatus 1..1
-* code.coding only http://fhir.de/StructureDefinition/CodingICD10GM
+* code.coding only CodingICD10GM
 * subject only Reference(Patient or Group)
 * note MS
 

@@ -16,7 +16,7 @@
   "name": "ObservationUICCTNM",
   "title": "Observation-UICC-TNM",
   "status": "active",
-  "description": "Profile for UICC TNM Observation.",
+  "description": "Profil für UICC TNM Observation.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

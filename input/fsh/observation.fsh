@@ -16,7 +16,7 @@ InstanceOf: TumorHistologieMorphologie
 Profile:        ObservationUICCTNM
 Parent:         Observation
 Title:          "Observation-UICC-TNM"
-Description:    "Profile for UICC TNM Observation."
+Description:    "Profil für UICC TNM Observation."
 * extension contains WorkFlowEpisodeOfCare named Fall 0..1
 * code 1..1
 * code = SCT#260879005
