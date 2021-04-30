@@ -9,7 +9,14 @@
   "fhirVersion": [
     "4.0.1"
   ],
-  "dependsOn": [],
+  "dependsOn": [
+    {
+      "packageId": "de.basisprofil.r4",
+      "uri": "https://simplifier.net/guide/basisprofil-de-r4",
+      "version": "1.0.0-alpha9",
+      "id": "de_basisprofil_r4"
+    }
+  ],
   "definition": {
     "resource": [
       {
