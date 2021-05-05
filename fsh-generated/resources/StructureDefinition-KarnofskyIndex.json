@@ -1,20 +1,19 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "KrebsDiagnose",
+  "id": "KarnofskyIndex",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Summary"
+      "valueString": "Clinical.Diagnostics"
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
       "valueCode": "patient"
     }
   ],
-  "url": "http://fhir.de/onkologie/StructureDefinition/KrebsDiagnose",
+  "url": "http://fhir.de/onkologie/StructureDefinition/KarnofskyIndex",
   "version": "0.1.0",
-  "name": "KrebsDiagnose",
-  "title": "Krebsdiagnose",
+  "name": "KarnofskyIndex",
   "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -51,14 +50,14 @@
   ],
   "kind": "resource",
   "abstract": false,
-  "type": "Condition",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Condition.extension",
-        "path": "Condition.extension",
+        "id": "Observation.extension",
+        "path": "Observation.extension",
         "slicing": {
           "discriminator": [
             {
@@ -71,8 +70,8 @@
         }
       },
       {
-        "id": "Condition.extension:Fall",
-        "path": "Condition.extension",
+        "id": "Observation.extension:Fall",
+        "path": "Observation.extension",
         "sliceName": "Fall",
         "min": 0,
         "max": "1",
@@ -87,8 +86,8 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.extension:Histologie",
-        "path": "Condition.extension",
+        "id": "Observation.extension:Histologie",
+        "path": "Observation.extension",
         "sliceName": "Histologie",
         "min": 0,
         "max": "1",
@@ -103,80 +102,60 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.clinicalStatus",
-        "path": "Condition.clinicalStatus",
-        "min": 1
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "89243-0",
+              "system": "http://LNC.org",
+              "display": "Karnofsky Performance Status score"
+            }
+          ]
+        }
       },
       {
-        "id": "Condition.code",
-        "path": "Condition.code",
-        "min": 1
-      },
-      {
-        "id": "Condition.code.extension:DiagnoseSicherheit",
-        "path": "Condition.code.extension",
-        "sliceName": "DiagnoseSicherheit",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Condition.code.extension:Seitenlokalisation",
-        "path": "Condition.code.extension",
-        "sliceName": "Seitenlokalisation",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://fhir.de/StructureDefinition/seitenlokalisation"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Condition.code.coding",
-        "path": "Condition.code.coding",
-        "type": [
-          {
-            "code": "Coding",
-            "profile": [
-              "http://fhir.de/StructureDefinition/CodingICD10GM"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Condition.recordedDate",
-        "path": "Condition.recordedDate",
-        "mustSupport": true
-      },
-      {
-        "id": "Condition.stage.assessment",
-        "path": "Condition.stage.assessment",
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.de/onkologie/StructureDefinition/ObservationUICCTNM"
+              "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
         ]
       },
       {
-        "id": "Condition.note",
-        "path": "Condition.note",
-        "mustSupport": true
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "Observation.valueRatio",
+        "path": "Observation.valueRatio",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.valueRatio.denominator.value",
+        "path": "Observation.valueRatio.denominator.value",
+        "patternDecimal": 100
       }
     ]
   }

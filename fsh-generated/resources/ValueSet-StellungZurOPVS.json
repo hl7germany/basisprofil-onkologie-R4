@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "StellungZurOPVS",
+  "id": "StellungZurOPVS",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/StellungZurOPVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/onkologie/CodeSystem/StellungZurOP"
+      }
+    ]
+  }
+}

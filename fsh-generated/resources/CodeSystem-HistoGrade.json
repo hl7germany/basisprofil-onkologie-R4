@@ -1,21 +1,13 @@
 {
   "resourceType": "CodeSystem",
-  "status": "draft",
+  "status": "active",
   "content": "complete",
   "name": "HistoGrade",
   "id": "HistoGrade",
   "title": "Histopathologische Grading Codes",
   "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
-  "version": "2020",
+  "version": "0.1.0",
   "url": "http://fhir.de/onkologie/CodeSystem/HistoGrade",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
-  },
-  "experimental": false,
-  "publisher": "HL7 Germany",
-  "copyright": "TODO",
   "concept": [
     {
       "code": "G0",
@@ -40,7 +32,35 @@
       "code": "G4",
       "display": "undifferenzierter Tumor mit sehr hohem Malignitätsgrad",
       "definition": "nicht bei allen Tumorentitäten"
+    },
+    {
+      "code": "GX",
+      "display": "nicht bestimmbar"
+    },
+    {
+      "code": "GL",
+      "display": "low grade (G1 oder G2)"
+    },
+    {
+      "code": "GM",
+      "display": "intermediate (G2 oder G3)"
+    },
+    {
+      "code": "GH",
+      "display": "high grade (G3 oder G4)"
+    },
+    {
+      "code": "GB",
+      "display": "Borderline"
+    },
+    {
+      "code": "U",
+      "display": "unbekannt"
+    },
+    {
+      "code": "T",
+      "display": "trifft nicht zu"
     }
   ],
-  "count": 5
+  "count": 12
 }

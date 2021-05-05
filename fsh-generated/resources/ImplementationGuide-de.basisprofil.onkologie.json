@@ -21,6 +21,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/ECOG"
+        },
+        "name": "ECOG",
+        "description": "Profile to represent ECOG State",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/EncounterTMBCase"
         },
         "name": "Tumor Board Case Review",
@@ -37,6 +45,20 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/HistopathologischesGrading"
+        },
+        "name": "HistopathologischesGrading",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/KarnofskyIndex"
+        },
+        "name": "KarnofskyIndex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/KrebsDiagnose"
         },
         "name": "Krebsdiagnose",
@@ -44,32 +66,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/episode-of-care-krebserkrankung"
-        },
-        "name": "Krebserkrankung",
-        "description": "Profile of EpisodeOfCare for a tumor disease.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/Nebenwirkung"
         },
         "name": "Nebenwirkung",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ObservationECOG"
-        },
-        "name": "ObservationECOG",
-        "description": "Profile to represent ECOG State",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ObservationKarnofskyIndex"
-        },
-        "name": "ObservationKarnofskyIndex",
         "exampleBoolean": false
       },
       {
@@ -82,18 +81,25 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/procedure-operation"
+        },
+        "name": "ADT-Procedure-Surgery",
+        "description": "Profile on Procedure for surgeries.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/procedure-bestrahlung"
         },
-        "name": "Radiation procedure",
+        "name": "ADT-Procedure-Radiotherapy",
         "description": "Profile on Procedure for radiation therapy.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/procedure-op"
+          "reference": "StructureDefinition/SystemischeTherapie"
         },
-        "name": "Op",
-        "description": "Profile für TumorOPs",
+        "name": "SystemischeTherapie",
         "exampleBoolean": false
       },
       {
@@ -101,6 +107,14 @@
           "reference": "StructureDefinition/TumorHistologieMorphologie"
         },
         "name": "Tumor Histologie und Morphologie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/episode-of-care-tumorerkrankung"
+        },
+        "name": "Tumorerkrankung",
+        "description": "Profile of EpisodeOfCare for a tumor disease.",
         "exampleBoolean": false
       },
       {
@@ -119,6 +133,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/GesamtbeurteilungResidualstatus"
+        },
+        "name": "GesamtbeurteilungResidualstatus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Histology"
         },
         "name": "Histologie ICD-O-3",
@@ -127,10 +148,32 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/Intention"
+        },
+        "name": "Therapie-Intention",
+        "description": "Intention-der-Therapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/PraefixCPU"
         },
         "name": "ADT-Präfix-CPU",
         "description": "Verleiht einem T, N oder M Wert ein Präfix",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/StellungZurOp"
+        },
+        "name": "StellungZurOp",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/StrahlentherapieGesamtdosis"
+        },
+        "name": "StrahlentherapieGesamtdosis",
         "exampleBoolean": false
       },
       {
@@ -176,6 +219,34 @@
           "reference": "ValueSet/icd-o-3-topologie"
         },
         "name": "Topologie Codes des ICD-O-3 CodeSystems.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/OpKomplikationenVS"
+        },
+        "name": "OpKomplikationenVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ResidualstatusVS"
+        },
+        "name": "ResidualstatusVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/StellungZurOPVS"
+        },
+        "name": "StellungZurOPVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/StrahlentherapieIntentionVS"
+        },
+        "name": "StrahlentherapieIntentionVS",
         "exampleBoolean": false
       },
       {
@@ -300,6 +371,13 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/TumorstatusFernmetastasenVS"
+        },
+        "name": "TumorstatusFernmetastasenVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/uicc-vs"
         },
         "name": "UICC-Simplified",
@@ -312,6 +390,52 @@
         },
         "name": "Histopathologische Grading Codes",
         "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/OnkoTBD"
+        },
+        "name": "OnkoTBD",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/OpKomplikationen"
+        },
+        "name": "OpKomplikationen",
+        "description": "Beurteiling des lokalen Residualstatus nach Abschluss der Operation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Residualstatus"
+        },
+        "name": "Residualstatus",
+        "description": "Beurteiling des lokalen Residualstatus nach Abschluss der Operation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/StellungZurOP"
+        },
+        "name": "StellungZurOP",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/StrahlentherapieIntention"
+        },
+        "name": "StrahlentherapieIntention",
+        "description": "Intention der Strahlentherapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/TumorstatusFernmetastasen"
+        },
+        "name": "TumorstatusFernmetastasen",
+        "description": "Tumorstatus Fernmetastasen nach ADT.",
         "exampleBoolean": false
       },
       {
@@ -335,7 +459,7 @@
           "reference": "Condition/FruehereTumorerkrankung"
         },
         "name": "FruehereTumorerkrankung",
-        "description": "Ein Beispiel für eine Krebs-Diagnose",
+        "description": "Ein Beispiel für eine fruehere Tumorerkrankung",
         "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/KrebsDiagnose"
       },
       {
@@ -375,7 +499,7 @@
         },
         "name": "Tumorerkrankung",
         "description": "Ein Beispiel für die Episode einer Tumorerkrankung.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/episode-of-care-krebserkrankung"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/episode-of-care-tumorerkrankung"
       },
       {
         "reference": {

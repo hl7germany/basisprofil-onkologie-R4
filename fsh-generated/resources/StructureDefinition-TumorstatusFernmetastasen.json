@@ -90,7 +90,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/tumorstatus-fernmetastasen"
+          "valueSet": "http://fhir.de/onkologie/ValueSet/TumorstatusFernmetastasenVS"
         }
       },
       {
@@ -98,7 +98,7 @@
         "path": "Observation.bodySite",
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie"
+          "valueSet": "http://fhir.de/onkologie/ValueSet/icd-o-3-topologie"
         }
       }
     ]

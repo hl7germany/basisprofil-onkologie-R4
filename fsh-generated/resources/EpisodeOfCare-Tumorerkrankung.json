@@ -3,7 +3,7 @@
   "id": "Tumorerkrankung",
   "meta": {
     "profile": [
-      "http://fhir.de/onkologie/StructureDefinition/episode-of-care-krebserkrankung"
+      "http://fhir.de/onkologie/StructureDefinition/episode-of-care-tumorerkrankung"
     ]
   },
   "type": [
@@ -21,7 +21,7 @@
   "diagnosis": [
     {
       "condition": {
-        "reference": "Condition/KrebsDiagnosePankreas"
+        "reference": "ObservationUICCTNM"
       },
       "rank": 1,
       "role": {

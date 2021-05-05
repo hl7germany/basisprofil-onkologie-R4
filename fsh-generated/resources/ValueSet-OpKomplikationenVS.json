@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "OpKomplikationenVS",
+  "id": "OpKomplikationenVS",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/OpKomplikationenVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/onkologie/CodeSystem/OpKomplikationen"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0136",
+        "concept": [
+          {
+            "code": "N"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "concept": [
+          {
+            "code": "unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

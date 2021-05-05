@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "StellungZurOP",
+  "id": "StellungZurOP",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/CodeSystem/StellungZurOP",
+  "concept": [
+    {
+      "code": "O",
+      "display": "ohne Bezug zu einer operativen Therapie"
+    },
+    {
+      "code": "A",
+      "display": "adjuvant"
+    },
+    {
+      "code": "N",
+      "display": "neoadjuvant"
+    },
+    {
+      "code": "I",
+      "display": "intraoperativ"
+    },
+    {
+      "code": "S",
+      "display": "Sonstiges"
+    }
+  ],
+  "count": 5
+}

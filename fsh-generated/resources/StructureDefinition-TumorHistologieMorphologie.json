@@ -91,7 +91,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/onkologie/ValueSet/icd-o-3-topologie"
+          "valueSet": "http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie"
         }
       },
       {
@@ -99,7 +99,7 @@
         "path": "Observation.bodySite",
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie"
+          "valueSet": "http://fhir.de/onkologie/ValueSet/icd-o-3-topologie"
         }
       }
     ]

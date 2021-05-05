@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Residualstatus",
+  "id": "Residualstatus",
+  "description": "Beurteiling des lokalen Residualstatus nach Abschluss der Operation",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/CodeSystem/Residualstatus",
+  "concept": [
+    {
+      "code": "R0",
+      "display": "Kein Residualtumor"
+    },
+    {
+      "code": "R1",
+      "display": "Mikroskopischer Residualtumor"
+    },
+    {
+      "code": "R2",
+      "display": "Makroskopischer Residualtumor"
+    },
+    {
+      "code": "R1(is)",
+      "display": "In-Situ-Rest"
+    },
+    {
+      "code": "R1(cy+)",
+      "display": "Cytologischer Rest"
+    },
+    {
+      "code": "RX",
+      "display": "Vorhandensein von Residualtumor kann nicht beurteilt werden"
+    }
+  ],
+  "count": 6
+}

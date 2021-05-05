@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ObservationKarnofskyIndex",
+  "id": "HistopathologischesGrading",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,9 +11,9 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://fhir.de/onkologie/StructureDefinition/ObservationKarnofskyIndex",
+  "url": "http://fhir.de/onkologie/StructureDefinition/HistopathologischesGrading",
   "version": "0.1.0",
-  "name": "ObservationKarnofskyIndex",
+  "name": "HistopathologischesGrading",
   "status": "active",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -82,24 +82,18 @@
               "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
             ]
           }
-        ],
-        "mustSupport": true
+        ]
       },
       {
-        "id": "Observation.extension:Histologie",
-        "path": "Observation.extension",
-        "sliceName": "Histologie",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://fhir.de/onkologie/StructureDefinition/Histology"
-            ]
-          }
-        ],
-        "mustSupport": true
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "laboratory"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.code",
@@ -107,25 +101,11 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "89243-0",
-              "system": "http://LNC.org",
-              "display": "Karnofsky Performance Status score"
+              "code": "59542-1",
+              "system": "http://LNC.org"
             }
           ]
         }
-      },
-      {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "min": 1,
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
-            ]
-          }
-        ]
       },
       {
         "id": "Observation.value[x]",
@@ -142,20 +122,19 @@
         },
         "type": [
           {
-            "code": "Ratio"
+            "code": "CodeableConcept"
           }
         ]
       },
       {
-        "id": "Observation.valueRatio",
-        "path": "Observation.valueRatio",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.valueRatio.denominator.value",
-        "path": "Observation.valueRatio.denominator.value",
-        "patternDecimal": 100
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/histo-grading"
+        }
       }
     ]
   }

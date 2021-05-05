@@ -13,6 +13,8 @@ Title:          "Krebsdiagnose"
 * code.extension contains DiagnoseSicherheit named DiagnoseSicherheit 0..1 MS and Seitenlokalisation named Seitenlokalisation 0..1 MS
 * subject only Reference(Patient or Group)
 * note MS
+* stage.assessment only Reference(ObservationUICCTNM)
+* recordedDate MS
 
 Instance: KrebsDiagnosePankreas
 InstanceOf: KrebsDiagnose
@@ -25,7 +27,7 @@ Description: "Ein Beispiel für eine Krebs-Diagnose"
 
 Instance: FruehereTumorerkrankung
 InstanceOf: KrebsDiagnose
-Description: "Ein Beispiel für eine Krebs-Diagnose"
+Description: "Ein Beispiel für eine fruehere Tumorerkrankung"
 * extension[Fall].valueReference =  Reference(Tumorerkrankung)
 * clinicalStatus =  #resolved
 * code = ICD10GM#C25 "Bösartige Neubildung des Pankreas"

@@ -2,16 +2,17 @@ Profile: TumorHistologieMorphologie
 Title: "Tumor Histologie und Morphologie"
 Parent: Observation
 * code = LNC#59847-4
-* bodySite from ICDO3Morphologie (required)
+* bodySite from ICDO3Topologie (required)
 * subject only Reference(Patient or Group)
 * value[x] only CodeableConcept
-* value[x] from ICDO3Topologie (required)
+* value[x] from ICDO3Morphologie (required)
 
 Instance: TumorHistologieMorphologieExample
 InstanceOf: TumorHistologieMorphologie
 * status = #final
 * bodySite = ICDO3#8691/1
 * valueCodeableConcept = ICDO3#C30.1
+
 
 Profile:        ObservationUICCTNM
 Parent:         Observation
@@ -20,7 +21,8 @@ Description:    "Profil für UICC TNM Observation."
 * extension contains WorkFlowEpisodeOfCare named Fall 0..1
 * code 1..1
 * code = SCT#260879005
-* valueCodeableConcept from UICCVS
+* value[x] only CodeableConcept
+* value[x] from UICCVS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -68,10 +70,10 @@ Description:    "Profil für UICC TNM Observation."
 Instance: UICCTNM
 InstanceOf: ObservationUICCTNM
 Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
-//* extension[ExampleEpisodeOfCare].valueReference =  Reference(Tumorerkrankung)
+* extension[WorkFlowEpisodeOfCare].valueReference =  Reference(Tumorerkrankung)
 * status = #final
 * subject = Reference(Beispielpatient)
-//* valueCodeableConcept = UICCCS#I "I"
+* valueCodeableConcept = #I "I"
 * component[TCodes].extension[0].valueCodeableConcept = UICC#c
 * component[TCodes].extension[0].url = TNMPRAEFIXCPU
 * component[TCodes].code = LNC#21905-5
@@ -95,13 +97,13 @@ Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
 Profile: TumorstatusFernmetastasen
 Parent: Observation
 * code = SCT#371497001
-* bodySite from ICDO3Morphologie (required)
+* bodySite from ICDO3Topologie (required)
 * subject only Reference(Patient or Group)
 * value[x] only CodeableConcept
 //todo migrate VS:
-* value[x] from http://uk-koeln.de/fhir/ValueSet/cancer-base/adt/tumorstatus-fernmetastasen (required)
+* value[x] from TumorstatusFernmetastasenVS
 
-Profile:        ObservationECOG
+Profile:        ECOG
 Parent:         Observation
 Description:    "Profile to represent ECOG State"
 * extension contains WorkFlowEpisodeOfCare named Fall 0..1 MS and Histology named Histologie 0..1 MS
@@ -111,7 +113,7 @@ Description:    "Profile to represent ECOG State"
 * valueCodeableConcept from ECOGPerformanceStatusVS
 
 
-Profile:        ObservationKarnofskyIndex
+Profile:        KarnofskyIndex
 Parent:         Observation
 * extension contains WorkFlowEpisodeOfCare named Fall 0..1 MS and Histology named Histologie 0..1 MS
 * code = LNC#89243-0 "Karnofsky Performance Status score"
@@ -119,4 +121,14 @@ Parent:         Observation
 * subject only Reference(Patient)
 * value[x] only Ratio
 * valueRatio.denominator.value = 100
+
+
+Profile:        HistopathologischesGrading
+Parent:         Observation
+* extension contains WorkFlowEpisodeOfCare named Fall 0..1
+* category = #laboratory
+* code = LNC#59542-1
+* value[x] only CodeableConcept
+* valueCodeableConcept from HistoGradeVS
+
 

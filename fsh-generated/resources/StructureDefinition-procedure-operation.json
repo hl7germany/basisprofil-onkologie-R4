@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "procedure-op",
+  "id": "procedure-operation",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,12 +11,12 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://fhir.de/onkologie/StructureDefinition/procedure-op",
+  "url": "http://fhir.de/onkologie/StructureDefinition/procedure-operation",
   "version": "0.1.0",
-  "name": "ProcedureOP",
-  "title": "Op",
+  "name": "ProcedureOperation",
+  "title": "ADT-Procedure-Surgery",
   "status": "active",
-  "description": "Profile für TumorOPs",
+  "description": "Profile on Procedure for surgeries.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -62,9 +62,9 @@
         }
       },
       {
-        "id": "Procedure.extension:episodeOfCare",
+        "id": "Procedure.extension:Fall",
         "path": "Procedure.extension",
-        "sliceName": "episodeOfCare",
+        "sliceName": "Fall",
         "min": 0,
         "max": "1",
         "type": [
@@ -77,15 +77,29 @@
         ]
       },
       {
+        "id": "Procedure.extension:Intention",
+        "path": "Procedure.extension",
+        "sliceName": "Intention",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/onkologie/StructureDefinition/Intention"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Procedure.category",
         "path": "Procedure.category",
-        "min": 1,
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "387713003",
-              "system": "http://snomed.info/sct",
-              "display": "Surgical procedure"
+              "code": "C17173",
+              "system": "http://ncithesaurus.nci.nih.gov",
+              "display": "Surgery procedure"
             }
           ]
         }
@@ -93,31 +107,41 @@
       {
         "id": "Procedure.code",
         "path": "Procedure.code",
-        "min": 1
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/CodeSystem/dimdi/ops"
+        }
       },
       {
-        "id": "Procedure.code.coding",
-        "path": "Procedure.code.coding",
+        "id": "Procedure.outcome",
+        "path": "Procedure.outcome",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/ResidualstatusVS"
+        }
+      },
+      {
+        "id": "Procedure.outcome.extension:GesamtbeurteilungResidualstatus",
+        "path": "Procedure.outcome.extension",
+        "sliceName": "GesamtbeurteilungResidualstatus",
+        "min": 0,
+        "max": "1",
         "type": [
           {
-            "code": "Coding",
+            "code": "Extension",
             "profile": [
-              "http://fhir.de/StructureDefinition/CodingOPS"
+              "http://fhir.de/onkologie/StructureDefinition/GesamtbeurteilungResidualstatus"
             ]
           }
         ]
       },
       {
-        "id": "Procedure.performedDateTime",
-        "path": "Procedure.performedDateTime",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
+        "id": "Procedure.complication",
+        "path": "Procedure.complication",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/OpKomplikationenVS"
+        }
       }
     ]
   }

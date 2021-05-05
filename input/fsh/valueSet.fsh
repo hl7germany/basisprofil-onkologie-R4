@@ -183,3 +183,20 @@ Description: "ECOG Performance Status (Level 0-5)."
 * LNC#LA9625-0 "ECOG 3: (Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden)"
 * LNC#LA9626-8 "ECOG 4: (Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden)"
 * LNC#LA9627-6 "ECOG 5: (Tod)"
+
+ValueSet: TumorstatusFernmetastasenVS
+* include codes from system TumorstatusFernmetastasen
+
+ValueSet: ResidualstatusVS
+* include codes from system Residualstatus
+
+ValueSet: OpKomplikationenVS
+* include codes from system OpKomplikationen
+* http://terminology.hl7.org/CodeSystem/v2-0136#N
+* http://terminology.hl7.org/CodeSystem/data-absent-reason#unknown
+
+ValueSet: StrahlentherapieIntentionVS
+* include codes from system StrahlentherapieIntention
+
+ValueSet: StellungZurOPVS
+* include codes from system StellungZurOP

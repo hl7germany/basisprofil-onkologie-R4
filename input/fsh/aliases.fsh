@@ -37,7 +37,7 @@ Alias: UICC = urn:oid:2.16.840.1.113883.15.16
 Alias: TCode = urn:oid:2.16.840.1.113883.15.16
 Alias: NCode = urn:oid:1.3.6.1.4.1.19376.1.3.11.44
 Alias: MCode = urn:oid:1.3.6.1.4.1.19376.1.3.11.45
-Alias: UICCTNM = http://www.uicc.org/resources/tnm/stage
+//Alias: UICCTNM = http://www.uicc.org/resources/tnm/stage
 Alias: TNMPRAEFIXAOID = urn:oid:2.16.840.1.113883.15.16
 Alias: TNMPRAEFIXS = urn:oid:1.2.276.0.76.3.1.131.1.5.1
 //todo: set correct URI for TNMPRAEFIXL & TNMPRAEFIXV
@@ -52,6 +52,7 @@ Alias: TNMPRAEFIXCPU = http://molit.eu/fhir/vitu/Extension/praefixcpu
 //BasisProfile-DE
 Alias: ICD10Coding = http://fhir.de/StructureDefinition/CodingICD10GM
 Alias: CodingOPS = http://fhir.de/StructureDefinition/CodingOPS
+Alias: OPS = http://fhir.de/CodeSystem/dimdi/ops
 Alias: ICD10Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
 
 //ISIK

@@ -1,7 +1,7 @@
-Profile:        Krebserkrankung
+Profile:        Tumorerkrankung
 Parent:         EpisodeOfCare
-Id:             episode-of-care-krebserkrankung
-Title:          "Krebserkrankung"
+Id:             episode-of-care-tumorerkrankung
+Title:          "Tumorerkrankung"
 Description:    "Profile of EpisodeOfCare for a tumor disease."
 * type 1..1
 * type = NCIT#C16213 "Cancer Diagnosis"
@@ -9,10 +9,10 @@ Description:    "Profile of EpisodeOfCare for a tumor disease."
 * patient 1..1
 
 Instance: Tumorerkrankung
-InstanceOf: Krebserkrankung
+InstanceOf: Tumorerkrankung
 Description: "Ein Beispiel für die Episode einer Tumorerkrankung."
 * status = #active
-* diagnosis.condition = Reference(KrebsDiagnosePankreas)
+* diagnosis.condition = Reference(ObservationUICCTNM)
 * diagnosis.rank = 1
 * diagnosis.role = #CC
 * patient = Reference(Beispielpatient)

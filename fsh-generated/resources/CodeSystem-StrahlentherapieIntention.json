@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "StrahlentherapieIntention",
+  "id": "StrahlentherapieIntention",
+  "description": "Intention der Strahlentherapie",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/CodeSystem/StrahlentherapieIntention",
+  "concept": [
+    {
+      "code": "K",
+      "display": "kurativ"
+    },
+    {
+      "code": "P",
+      "display": "palliativ"
+    },
+    {
+      "code": "S",
+      "display": "Sonstiges"
+    },
+    {
+      "code": "X",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 4
+}

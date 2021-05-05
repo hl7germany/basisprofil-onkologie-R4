@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "TumorstatusFernmetastasen",
+  "id": "TumorstatusFernmetastasen",
+  "description": "Tumorstatus Fernmetastasen nach ADT.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/CodeSystem/TumorstatusFernmetastasen",
+  "concept": [
+    {
+      "code": "K",
+      "display": "keine Fernmetastasen nachweisbar"
+    },
+    {
+      "code": "M",
+      "display": "verbliebene Fernmetastase(n)"
+    },
+    {
+      "code": "R",
+      "display": "neu aufgetretene Fernmetastase(n) bzw. Metastasenrezidiv"
+    },
+    {
+      "code": "T",
+      "display": "Fernmetastasen Residuen"
+    },
+    {
+      "code": "P",
+      "display": "Fernmetastasen Progress"
+    },
+    {
+      "code": "N",
+      "display": "Fernmetastasen No Change"
+    },
+    {
+      "code": "F",
+      "display": "fraglicher Befund"
+    },
+    {
+      "code": "U",
+      "display": "unbekannt"
+    },
+    {
+      "code": "X",
+      "display": "fehlende Angabe"
+    }
+  ],
+  "count": 9
+}

@@ -1,0 +1,20 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "OnkoTBD",
+  "id": "OnkoTBD",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/CodeSystem/OnkoTBD",
+  "concept": [
+    {
+      "code": "LK_U",
+      "display": "Lymphknoten untersucht"
+    },
+    {
+      "code": "LK_B",
+      "display": "Lymphknoten befallen"
+    }
+  ],
+  "count": 2
+}
