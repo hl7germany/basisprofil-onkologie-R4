@@ -1,5 +1,5 @@
 // External Code Systems
-Alias:   LNC = http://LNC.org
+Alias:   LNC = http://loinc.org
 Alias:   SCT = http://snomed.info/sct
 Alias:   UCUM = http://unitsofmeasure.org
 Alias:   NCIT = http://ncithesaurus.nci.nih.gov
@@ -10,7 +10,7 @@ Alias:   CPT = http://www.ama-assn.org/go/cpt
 Alias:   AJCC = http://cancerstaging.org
 Alias:   GTR = http://www.ncbi.nlm.nih.gov/gtr
 Alias:   CLINVAR = http://www.ncbi.nlm.nih.gov/clinvar
-Alias:   HGNC = http://www.genenames.org   // MK 10-19-2020: changed to align with FHIR-- see https://www.hl7.org/fhir/terminologies-systems.html
+Alias:   HGNC = http://www.genenames.org
 Alias:   HGVS = http://varnomen.hgvs.org
 Alias:   SO = http://sequenceontology.org
 
