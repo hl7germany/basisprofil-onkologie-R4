@@ -2,8 +2,8 @@
 Alias:   LNC = http://loinc.org
 Alias:   SCT = http://snomed.info/sct
 Alias:   UCUM = http://unitsofmeasure.org
-Alias:   NCIT = http://ncithesaurus.nci.nih.gov
-Alias:   ICD10GM = http://fhir.de/CodeSystem/dimdi/icd-10-gm
+Alias:   NCIT = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+Alias:   ICD10GM = http://fhir.de/CodeSystem/bfarm/icd-10-gm
 Alias:   ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias:   RXN = http://www.nlm.nih.gov/research/umls/rxnorm
 Alias:   CPT = http://www.ama-assn.org/go/cpt
@@ -56,5 +56,5 @@ Alias: OPS = http://fhir.de/CodeSystem/dimdi/ops
 Alias: ICD10Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
 
 //ISIK
-Alias: IsikDiagnose = https://gematik.de/fhir/IsiK/StructureDefinition/IsiKDiagnose
+Alias: IsikDiagnose = https://gematik.de/fhir/ISiK/StructureDefinition/ISiKDiagnose
 
