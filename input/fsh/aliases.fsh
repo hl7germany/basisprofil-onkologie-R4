@@ -54,6 +54,8 @@ Alias: ICD10Coding = http://fhir.de/StructureDefinition/CodingICD10GM
 Alias: CodingOPS = http://fhir.de/StructureDefinition/CodingOPS
 Alias: OPS = http://fhir.de/CodeSystem/dimdi/ops
 Alias: ICD10Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
+Alias: DiagnoseSicherheit = http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit
+Alias: Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
 
 //ISIK
 Alias: IsikDiagnose = https://gematik.de/fhir/ISiK/StructureDefinition/ISiKDiagnose
