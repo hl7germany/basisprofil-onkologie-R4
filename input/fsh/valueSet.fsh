@@ -184,6 +184,20 @@ Description: "ECOG Performance Status (Level 0-5)."
 * LNC#LA9626-8 "ECOG 4: (Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden)"
 * LNC#LA9627-6 "ECOG 5: (Tod)"
 
+ValueSet: KarnofskyIndexVS
+Description: "Karnofsky Performance Status (Level 0-100)."
+* LNC#LA29175-9 "Normal; no complaints; no evidence of disease"
+* LNC#LA29176-7 "Able to carry on normal activity; minor signs or symptoms of disease"
+* LNC#LA29177-5 "Normal activity with effort; some signs or symptoms of disease"
+* LNC#LA29178-3 "Cares for self; unable to carry on normal activity or do active work"
+* LNC#LA29179-1 "Requires occasional assistance but is able to care for most needs"
+* LNC#LA29180-9 "Requires considerable assistance and frequent medical care"
+* LNC#LA29181-7 "Disabled; requires special care and assistance"
+* LNC#LA29182-5 "Severely disabled; hospitalization is indicated, although death not imminent"
+* LNC#LA29183-3 "Very sick; hospitalization necessary; active supportive treatment necessary"
+* LNC#LA29184-1 "Moribund; fatal processes progressing rapidly"
+* LNC#LA9627-6 "Dead"
+
 ValueSet: TumorstatusFernmetastasenVS
 * include codes from system TumorstatusFernmetastasen
 

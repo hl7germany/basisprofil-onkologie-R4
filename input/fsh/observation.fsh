@@ -112,6 +112,14 @@ Description:    "Profile to represent ECOG State"
 * subject only Reference(Patient)
 * valueCodeableConcept from ECOGPerformanceStatusVS
 
+Instance: ECOGExample
+InstanceOf: ECOG
+Usage: #example
+* status = #final
+* code = LNC#89247-1 "ECOG Performance Status score"
+* subject = Reference(Beispielpatient)
+* effectiveDateTime = "2021-01-17"
+* valueCodeableConcept = LNC#LA9623-5 "ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)"
 
 Profile:        KarnofskyIndex
 Parent:         Observation
@@ -119,8 +127,16 @@ Parent:         Observation
 * code = LNC#89243-0 "Karnofsky Performance Status score"
 * subject 1..1
 * subject only Reference(Patient)
-* value[x] only Ratio
-* valueRatio.denominator.value = 100
+* valueCodeableConcept from KarnofskyIndexVS
+
+Instance: KarnofskyIndexExample
+InstanceOf: KarnofskyIndex
+Usage: #example
+* status = #final
+* code = LNC#89243-0 "Karnofsky Performance Status score"
+* subject = Reference(Beispielpatient)
+* effectiveDateTime = "2021-01-17"
+* valueCodeableConcept = LNC#LA29177-5 "Normal activity with effort; some signs or symptoms of disease"
 
 
 Profile:        HistopathologischesGrading
