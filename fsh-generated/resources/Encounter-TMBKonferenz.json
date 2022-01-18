@@ -8,6 +8,7 @@
   },
   "status": "planned",
   "class": {
-    "code": "VR"
+    "code": "VR",
+    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
   }
 }

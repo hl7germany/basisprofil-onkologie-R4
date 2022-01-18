@@ -19,7 +19,7 @@ Instance: TMBFall
 InstanceOf: EncounterTMBCase
 Description: "Ein Beispiel für ein Encounter welcher einen MTB Fall innerhalb einer MTB Konferenz abbildet."
 * status = #planned
-* class = #VR
+* class = v3-ActCode#VR
 * subject = Reference(Beispielpatient)
 * partOf = Reference(TMBFall)
 
@@ -27,6 +27,6 @@ Instance: TMBKonferenz
 InstanceOf: EncounterTMBConference
 Description: "Ein Beispiel für eine MTB Konferenz."
 * status = #planned
-* class = #VR
+* class = v3-ActCode#VR
 
 

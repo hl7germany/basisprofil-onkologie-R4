@@ -28,6 +28,7 @@ Alias:   MedReqStatus = http://hl7.org/fhir/CodeSystem/medicationrequest-status
 Alias:   MedReqIntent = http://hl7.org/fhir/CodeSystem/medicationrequest-intent
 Alias:   MedReqCat = 	http://terminology.hl7.org/CodeSystem/medicationrequest-category
 Alias:   RefMeaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
+Alias:   v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
 // Core Extensions
 Alias: WorkFlowEpisodeOfCare = http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare
