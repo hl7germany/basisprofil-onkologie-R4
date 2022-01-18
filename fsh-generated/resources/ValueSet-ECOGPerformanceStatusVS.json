@@ -9,7 +9,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://LNC.org",
+        "system": "http://loinc.org",
         "concept": [
           {
             "code": "LA9622-7",

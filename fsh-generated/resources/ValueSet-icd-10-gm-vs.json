@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://fhir.de/CodeSystem/dimdi/icd-10-gm"
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
       }
     ]
   }

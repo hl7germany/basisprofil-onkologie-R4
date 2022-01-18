@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Condition",
-  "baseDefinition": "https://gematik.de/fhir/IsiK/StructureDefinition/IsiKDiagnose",
+  "baseDefinition": "https://gematik.de/fhir/ISiK/StructureDefinition/ISiKDiagnose",
   "derivation": "constraint",
   "differential": {
     "element": [

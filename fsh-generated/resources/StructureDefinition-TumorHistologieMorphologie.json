@@ -63,7 +63,7 @@
           "coding": [
             {
               "code": "59847-4",
-              "system": "http://LNC.org"
+              "system": "http://loinc.org"
             }
           ]
         }

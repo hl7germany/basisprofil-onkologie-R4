@@ -8,14 +8,6 @@
   "description": "UICC-Klassifikation zum Staging einer Krebserkrankung.",
   "version": "2020",
   "url": "http://fhir.de/onkologie/CodeSystem/UICCCS",
-  "meta": {
-    "profile": [
-      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-    ]
-  },
-  "experimental": false,
-  "publisher": "HL7 Germany",
-  "copyright": "Union for International Cancer Control (UICC)",
   "concept": [
     {
       "code": "okkult\"",
@@ -146,5 +138,13 @@
       "display": "IVC"
     }
   ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "publisher": "HL7 Germany",
+  "copyright": "Union for International Cancer Control (UICC)",
   "count": 32
 }

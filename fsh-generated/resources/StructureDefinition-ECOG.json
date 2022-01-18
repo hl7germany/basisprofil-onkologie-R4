@@ -109,7 +109,7 @@
           "coding": [
             {
               "code": "89247-1",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "ECOG Performance Status score"
             }
           ]

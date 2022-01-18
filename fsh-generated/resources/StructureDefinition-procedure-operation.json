@@ -98,7 +98,7 @@
           "coding": [
             {
               "code": "C17173",
-              "system": "http://ncithesaurus.nci.nih.gov",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
               "display": "Surgery procedure"
             }
           ]

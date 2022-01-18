@@ -167,7 +167,7 @@
           "coding": [
             {
               "code": "21905-5",
-              "system": "http://LNC.org"
+              "system": "http://loinc.org"
             }
           ]
         }
@@ -230,7 +230,7 @@
           "coding": [
             {
               "code": "21906-3",
-              "system": "http://LNC.org"
+              "system": "http://loinc.org"
             }
           ]
         }
@@ -293,7 +293,7 @@
           "coding": [
             {
               "code": "21907-1",
-              "system": "http://LNC.org"
+              "system": "http://loinc.org"
             }
           ]
         }
@@ -327,7 +327,7 @@
           "coding": [
             {
               "code": "LA4222-1",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "Autopsy Only"
             }
           ]
@@ -362,7 +362,7 @@
           "coding": [
             {
               "code": "59479-6",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "Collaborative staging post treatment extension Cancer"
             }
           ]
@@ -397,7 +397,7 @@
           "coding": [
             {
               "code": "21983-2",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "Recurrence type first episode Cancer"
             }
           ]
@@ -467,7 +467,7 @@
           "coding": [
             {
               "code": "33739-4",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
             }
           ]
@@ -502,7 +502,7 @@
           "coding": [
             {
               "code": "33740-2",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
             }
           ]
@@ -537,7 +537,7 @@
           "coding": [
             {
               "code": "33741-0",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "Deprecated Perineural invasion [Type] in Specimen by CAP cancer protocols"
             }
           ]
@@ -572,7 +572,7 @@
           "coding": [
             {
               "code": "21894-1",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "Regional lymph nodes examined [#] Specimen"
             }
           ]
@@ -601,7 +601,7 @@
           "coding": [
             {
               "code": "21893-3",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "Regional lymph nodes positive [#] Specimen"
             }
           ]

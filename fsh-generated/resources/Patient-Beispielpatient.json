@@ -1,14 +1,6 @@
 {
   "resourceType": "Patient",
   "id": "Beispielpatient",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
-      "valueReference": {
-        "reference": "EpisodeOfCare/Tumorerkrankung"
-      }
-    }
-  ],
   "active": true,
   "gender": "male",
   "birthDate": "1974-12-25",

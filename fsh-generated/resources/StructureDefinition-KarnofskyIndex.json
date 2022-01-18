@@ -108,7 +108,7 @@
           "coding": [
             {
               "code": "89243-0",
-              "system": "http://LNC.org",
+              "system": "http://loinc.org",
               "display": "Karnofsky Performance Status score"
             }
           ]
@@ -128,34 +128,19 @@
         ]
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
         "type": [
           {
-            "code": "Ratio"
+            "code": "CodeableConcept"
           }
-        ]
-      },
-      {
-        "id": "Observation.valueRatio",
-        "path": "Observation.valueRatio",
-        "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Observation.valueRatio.denominator.value",
-        "path": "Observation.valueRatio.denominator.value",
-        "patternDecimal": 100
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/KarnofskyIndexVS"
+        }
       }
     ]
   }

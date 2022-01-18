@@ -54,7 +54,7 @@
           "coding": [
             {
               "code": "C93304",
-              "system": "http://ncithesaurus.nci.nih.gov"
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"
             }
           ]
         }
@@ -66,7 +66,7 @@
           "coding": [
             {
               "code": "C93304",
-              "system": "http://ncithesaurus.nci.nih.gov",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
               "display": "Tumor Board Review"
             }
           ]

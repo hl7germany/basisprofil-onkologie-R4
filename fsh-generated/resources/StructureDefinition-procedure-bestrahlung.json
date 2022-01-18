@@ -114,7 +114,7 @@
           "coding": [
             {
               "code": "C15313",
-              "system": "http://ncithesaurus.nci.nih.gov",
+              "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
               "display": "Radiation Therapy"
             }
           ]

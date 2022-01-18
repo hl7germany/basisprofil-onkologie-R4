@@ -102,7 +102,7 @@
           "coding": [
             {
               "code": "59542-1",
-              "system": "http://LNC.org"
+              "system": "http://loinc.org"
             }
           ]
         }
