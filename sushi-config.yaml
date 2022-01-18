@@ -13,7 +13,10 @@ releaseLabel: ci-build
 dependencies:
   de.basisprofil.r4:
     uri: https://simplifier.net/guide/basisprofil-de-r4
-    version: 1.0.0-alpha9
+    version: 1.2.0
+  de.gematik.isik-basismodul:
+    uri: https://gematik.de/fhir/ISiK/ImplementationGuide/ISiK-basismodul
+    version: 1.0.2
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
