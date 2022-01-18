@@ -1,4 +1,5 @@
 .DS_Store
+.venv
 Thumbs.db
 /input-cache
 /output

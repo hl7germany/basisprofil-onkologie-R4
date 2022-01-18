@@ -73,7 +73,7 @@ Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
 * extension[WorkFlowEpisodeOfCare].valueReference =  Reference(Tumorerkrankung)
 * status = #final
 * subject = Reference(Beispielpatient)
-* valueCodeableConcept = #I "I"
+* valueCodeableConcept = UICCCS#I "I"
 * component[TCodes].extension[0].valueCodeableConcept = UICC#c
 * component[TCodes].extension[0].url = TNMPRAEFIXCPU
 * component[TCodes].code = LNC#21905-5

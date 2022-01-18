@@ -20,8 +20,8 @@ Instance: KrebsDiagnosePankreas
 InstanceOf: KrebsDiagnose
 Description: "Ein Beispiel für eine Krebs-Diagnose"
 * extension[Fall].valueReference =  Reference(Tumorerkrankung)
-* clinicalStatus =  #active
-* code = ICD10GM#C25 "Bösartige Neubildung des Pankreas"
+* clinicalStatus =  ClinStatus#active
+* code = ICD10GM|2020#C25 "Bösartige Neubildung des Pankreas"
 * subject = Reference(Beispielpatient)
 * recordedDate = "2020-03-11T09:40:27+01:00"
 
@@ -29,8 +29,8 @@ Instance: FruehereTumorerkrankung
 InstanceOf: KrebsDiagnose
 Description: "Ein Beispiel für eine fruehere Tumorerkrankung"
 * extension[Fall].valueReference =  Reference(Tumorerkrankung)
-* clinicalStatus =  #resolved
-* code = ICD10GM#C25 "Bösartige Neubildung des Pankreas"
+* clinicalStatus =  ClinStatus#resolved
+* code = ICD10GM|2020#C25 "Bösartige Neubildung des Pankreas"
 * subject = Reference(Beispielpatient)
 * recordedDate = "2020-03-11T09:40:27+01:00"
 
