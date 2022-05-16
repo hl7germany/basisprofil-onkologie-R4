@@ -25,7 +25,7 @@ Description:    "Profil für UICC TNM Observation."
   * coding ^slicing.rules = #open
   * coding contains SnomedCT 0..1 MS and Loinc 1..1 MS
   * coding[SnomedCT] = SCT#260879005
-  * coding[Loinc] = LNC#21858-6
+  * coding[Loinc] = LNC#33732-9
 * value[x] only CodeableConcept
 * valueCodeableConcept from UICCVS
 * valueCodeableConcept.coding.version 1.. MS
