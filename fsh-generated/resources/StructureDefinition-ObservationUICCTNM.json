@@ -558,7 +558,7 @@
         "path": "Observation.component.value[x]",
         "type": [
           {
-            "code": "boolean"
+            "code": "Quantity"
           }
         ]
       },
@@ -587,7 +587,65 @@
         "path": "Observation.component.value[x]",
         "type": [
           {
-            "code": "boolean"
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:Sentinel_untersucht",
+        "path": "Observation.component",
+        "sliceName": "Sentinel_untersucht",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:Sentinel_untersucht.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "85347-3",
+              "system": "http://loinc.org",
+              "display": "Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:Sentinel_untersucht.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:Sentinel_befallen",
+        "path": "Observation.component",
+        "sliceName": "Sentinel_befallen",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:Sentinel_befallen.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "98278-5",
+              "system": "http://loinc.org",
+              "display": "Sentinel lymph nodes with metastasis [#] in Cancer specimen"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:Sentinel_befallen.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
           }
         ]
       }

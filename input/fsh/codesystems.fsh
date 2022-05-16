@@ -13,7 +13,7 @@ Description: "UICC-Klassifikation zum Staging einer Krebserkrankung."
 * ^publisher = "HL7 Germany"
 * ^copyright = "Union for International Cancer Control (UICC)"
 * ^content = #complete
-* #okkult" "okkult"
+* #okkult "okkult"
 * #0 "0"
 * #0a "0a"
 * #0is "0is"

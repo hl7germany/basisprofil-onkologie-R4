@@ -10,7 +10,7 @@
   "url": "http://fhir.de/onkologie/CodeSystem/UICCCS",
   "concept": [
     {
-      "code": "okkult\"",
+      "code": "okkult",
       "display": "okkult"
     },
     {

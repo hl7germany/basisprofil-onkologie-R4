@@ -66,10 +66,18 @@ Description:    "Profil für UICC TNM Observation."
 * component[Pn-symbol].valueCodeableConcept from TnmPraefixVVS
 * component contains LK_untersucht 0..1
 * component[LK_untersucht].code = LNC#21894-1 "Regional lymph nodes examined [#] Specimen"
-* component[LK_untersucht].value[x] only boolean
+* component[LK_untersucht].value[x] only Quantity
 * component contains LK_befallen 0..1
 * component[LK_befallen].code = LNC#21893-3 "Regional lymph nodes positive [#] Specimen"
-* component[LK_befallen].value[x] only boolean
+* component[LK_befallen].value[x] only Quantity
+* component contains Sentinel_untersucht 0..1
+// TODO: LOINC Code ohne method beantragen
+* component[Sentinel_untersucht].code = LNC#85347-3	"Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy"
+* component[Sentinel_untersucht].value[x] only Quantity
+* component contains Sentinel_befallen 0..1
+* component[Sentinel_befallen].code = LNC#98278-5 "Sentinel lymph nodes with metastasis [#] in Cancer specimen"
+* component[Sentinel_befallen].value[x] only Quantity
+
 
 
 Instance: UICCTNM
@@ -96,8 +104,10 @@ Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
 * component[r-symbol].valueCodeableConcept = UICC#r
 * component[S-symbol].valueCodeableConcept = TNMPRAEFIXS#s
 * component[L-symbol].valueCodeableConcept = TNMPRAEFIXS#l
-* component[LK_untersucht].valueBoolean = true
-* component[LK_befallen].valueBoolean = false
+* component[LK_untersucht].valueQuantity = 3 '[lymph_nodes]' "Lymphknoten"
+* component[LK_befallen].valueQuantity =  3 '[lymph_nodes]' "Lymphknoten"
+* component[Sentinel_untersucht].valueQuantity = 3 '[sentinel_lymph_nodes]' "Sentinel Lymphknoten"
+* component[Sentinel_befallen].valueQuantity =  0 '[sentinel_lymph_nodes]' "Sentinel Lymphknoten"
 
 Profile: TumorstatusFernmetastasen
 Parent: Observation
