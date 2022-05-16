@@ -9,8 +9,9 @@
   "code": {
     "coding": [
       {
-        "code": "260879005",
-        "system": "http://snomed.info/sct"
+        "code": "21858-6",
+        "system": "http://loinc.org",
+        "display": "Grade Cancer"
       }
     ]
   },

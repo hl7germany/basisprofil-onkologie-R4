@@ -19,8 +19,13 @@ Parent:         Observation
 Title:          "Observation-UICC-TNM"
 Description:    "Profil für UICC TNM Observation."
 * extension contains WorkFlowEpisodeOfCare named Fall 0..1
-* code 1..1
-* code = SCT#260879005
+* code MS
+  * coding ^slicing.discriminator.type = #pattern
+  * coding ^slicing.discriminator.path = "$this"
+  * coding ^slicing.rules = #open
+  * coding contains SnomedCT 0..1 MS and Loinc 1..1 MS
+  * coding[SnomedCT] = SCT#260879005 "UICC stage grouping"
+  * coding[Loinc] = LNC#21858-6 "Grade Cancer"
 * value[x] only CodeableConcept
 * value[x] from UICCVS
 * component ^slicing.discriminator.type = #pattern

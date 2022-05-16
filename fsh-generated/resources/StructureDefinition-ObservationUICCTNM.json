@@ -58,20 +58,6 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.extension",
-        "path": "Observation.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.extension:Fall",
         "path": "Observation.extension",
         "sliceName": "Fall",
@@ -89,14 +75,47 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "patternCodeableConcept": {
-          "coding": [
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
             {
-              "code": "260879005",
-              "system": "http://snomed.info/sct"
+              "type": "pattern",
+              "path": "$this"
             }
-          ]
-        }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:SnomedCT",
+        "path": "Observation.code.coding",
+        "sliceName": "SnomedCT",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "260879005",
+          "system": "http://snomed.info/sct",
+          "display": "UICC stage grouping"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:Loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "Loinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "21858-6",
+          "system": "http://loinc.org",
+          "display": "Grade Cancer"
+        },
+        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
@@ -130,20 +149,6 @@
         "sliceName": "TCodes",
         "min": 0,
         "max": "1"
-      },
-      {
-        "id": "Observation.component:TCodes.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.component:TCodes.extension:praefixCpu",
@@ -195,20 +200,6 @@
         "max": "1"
       },
       {
-        "id": "Observation.component:NCodes.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.component:NCodes.extension:praefixCpu",
         "path": "Observation.component.extension",
         "sliceName": "praefixCpu",
@@ -256,20 +247,6 @@
         "sliceName": "MCodes",
         "min": 0,
         "max": "1"
-      },
-      {
-        "id": "Observation.component:MCodes.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.component:MCodes.extension:praefixCpu",

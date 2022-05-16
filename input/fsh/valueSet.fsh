@@ -92,7 +92,7 @@ Id: tnm-nqualifier-mol
 Title: "TNM-N Qualifier mol"
 Description: "Includes the following UICC codes for TNM-N Qualifier mol."
 * UICC#mol+ "mol+"
-* UICC#mol+ "mol-"
+* UICC#mol- "mol-"
 
 ValueSet: TNMnqualifiersn
 Id: tnm-n-qualifier-sn
