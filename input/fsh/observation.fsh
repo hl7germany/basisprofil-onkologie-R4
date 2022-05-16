@@ -27,7 +27,8 @@ Description:    "Profil für UICC TNM Observation."
   * coding[SnomedCT] = SCT#260879005
   * coding[Loinc] = LNC#21858-6
 * value[x] only CodeableConcept
-* value[x] from UICCVS
+* valueCodeableConcept from UICCVS
+* valueCodeableConcept.coding.version 1.. MS
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
@@ -87,6 +88,7 @@ Description: "Enthält Wert für UICC Stadium sowie TNM-Komponente."
 * status = #final
 * subject = Reference(Beispielpatient)
 * valueCodeableConcept = UICCCS#I "I"
+* valueCodeableConcept.coding.version = "8. Auflage"
 * component[TCodes].extension[0].valueCodeableConcept = UICC#c
 * component[TCodes].extension[0].url = TNMPRAEFIXCPU
 * component[TCodes].code = LNC#21905-5
