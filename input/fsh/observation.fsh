@@ -24,8 +24,8 @@ Description:    "Profil für UICC TNM Observation."
   * coding ^slicing.discriminator.path = "$this"
   * coding ^slicing.rules = #open
   * coding contains SnomedCT 0..1 MS and Loinc 1..1 MS
-  * coding[SnomedCT] = SCT#260879005 "UICC stage grouping"
-  * coding[Loinc] = LNC#21858-6 "Grade Cancer"
+  * coding[SnomedCT] = SCT#260879005
+  * coding[Loinc] = LNC#21858-6
 * value[x] only CodeableConcept
 * value[x] from UICCVS
 * component ^slicing.discriminator.type = #pattern
