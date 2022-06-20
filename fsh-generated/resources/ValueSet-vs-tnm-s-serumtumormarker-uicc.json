@@ -1,0 +1,39 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_S_Serumtumormarker_UICC",
+  "id": "vs-tnm-s-serumtumormarker-uicc",
+  "title": "ValueSet TNM S Serumtumormarker UICC",
+  "description": "Das ValueSet enthält die TNM Codes für Serumtumormarker aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-s-serumtumormarker-uicc",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "S0",
+            "display": "S0"
+          },
+          {
+            "code": "S1",
+            "display": "S1"
+          },
+          {
+            "code": "S2",
+            "display": "S2"
+          },
+          {
+            "code": "S3",
+            "display": "S3"
+          },
+          {
+            "code": "SX",
+            "display": "SX"
+          }
+        ]
+      }
+    ]
+  }
+}

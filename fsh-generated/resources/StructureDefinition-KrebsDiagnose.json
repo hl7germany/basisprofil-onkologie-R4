@@ -57,6 +57,20 @@
   "differential": {
     "element": [
       {
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Condition.extension:Fall",
         "path": "Condition.extension",
         "sliceName": "Fall",
@@ -154,7 +168,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.de/onkologie/StructureDefinition/ObservationUICCTNM"
+              "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
             ]
           }
         ]

@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_R_Klassifikation_UICC",
+  "id": "vs-tnm-r-klassifikation-uicc",
+  "title": "ValueSet TNM Residualtumor- (R-)Klassifikation UICC",
+  "description": "Das ValueSet enthält Codes für die TNM Residualtumor- (R-)Klassifikation.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-r-classification-uicc",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "RX",
+            "display": "RX"
+          },
+          {
+            "code": "R0",
+            "display": "R0"
+          },
+          {
+            "code": "R1",
+            "display": "R1"
+          },
+          {
+            "code": "R1is",
+            "display": "R1(is)"
+          },
+          {
+            "code": "R1cy",
+            "display": "R1(cy)"
+          },
+          {
+            "code": "R2",
+            "display": "R2"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -13,7 +13,7 @@ Title:          "Krebsdiagnose"
 * code.extension contains DiagnoseSicherheit named DiagnoseSicherheit 0..1 MS and Seitenlokalisation named Seitenlokalisation 0..1 MS
 * subject only Reference(Patient or Group)
 * note MS
-* stage.assessment only Reference(ObservationUICCTNM)
+* stage.assessment only Reference(SD_UICC_TNM)
 * recordedDate MS
 
 Instance: KrebsDiagnosePankreas

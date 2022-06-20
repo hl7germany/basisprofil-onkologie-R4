@@ -48,6 +48,20 @@
   "differential": {
     "element": [
       {
+        "id": "Procedure.extension",
+        "path": "Procedure.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Procedure.extension:Fall",
         "path": "Procedure.extension",
         "sliceName": "Fall",

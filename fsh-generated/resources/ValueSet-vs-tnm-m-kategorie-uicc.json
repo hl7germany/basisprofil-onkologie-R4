@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_M_Kategorie_UICC",
+  "id": "vs-tnm-m-kategorie-uicc",
+  "title": "ValueSet TNM M Kategorie UICC",
+  "description": "Das ValueSet enthält die TNM M-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-m-kategorie-uicc",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "M0",
+            "display": "M0"
+          },
+          {
+            "code": "M1",
+            "display": "M1"
+          },
+          {
+            "code": "M1a",
+            "display": "M1a"
+          },
+          {
+            "code": "M1b",
+            "display": "M1b"
+          },
+          {
+            "code": "M1c",
+            "display": "M1c"
+          },
+          {
+            "code": "M1d",
+            "display": "M1d"
+          },
+          {
+            "code": "MX",
+            "display": "MX"
+          }
+        ]
+      }
+    ]
+  }
+}

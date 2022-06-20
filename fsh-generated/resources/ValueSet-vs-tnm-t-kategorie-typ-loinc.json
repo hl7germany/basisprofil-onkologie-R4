@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_T_Kategorie_Typ_LOINC",
+  "id": "vs-tnm-t-kategorie-typ-loinc",
+  "title": "ValueSet TNM T-Kategorie Typ LOINC",
+  "description": "Das ValueSet enthält Codes zur Differenzierung der TNM Primärtumor (T) Kategorie als entweder klinisch (cT) oder pathologisch (pT).",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-t-kategorie-typ-loinc",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "21905-5",
+            "display": "Primary tumor.clinical [Class] Cancer"
+          },
+          {
+            "code": "21899-0",
+            "display": "Primary tumor.pathology Cancer"
+          }
+        ]
+      }
+    ]
+  }
+}

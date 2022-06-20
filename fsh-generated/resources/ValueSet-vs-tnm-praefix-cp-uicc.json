@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_Praefix_CP_UICC",
+  "id": "vs-tnm-praefix-cp-uicc",
+  "title": "ValueSet TNM Praefix CP UICC",
+  "description": "Das ValueSet enthält die c und p Präfixe für die T-, N- oder M-Kategorien aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+  "version": "0.1.0",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-praefix-cpu-uicc",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "c",
+            "display": "c"
+          },
+          {
+            "code": "p",
+            "display": "p"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,8 +1,28 @@
-Extension: PraefixCPU
-Title: "ADT-Präfix-CPU"
-Description: "Verleiht einem T, N oder M Wert ein Präfix"
+Extension: SD_UICC_TNM_Praefix_CP
+Id: sd-uicc-tnm-praefix-cp
+Title: "Extension UICC TNM Präfix CP"
+Description: "Die Extension verleiht einer TNM T-, N- oder M-Kategorie ein c oder p Präfix."
+* ^url = "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
 * value[x] only CodeableConcept
-* value[x] from TNMpraefixcpuVS
+* value[x] from VS_TNM_Praefix_CP_UICC (required)
+
+// Isolierte Tumorzellen Suffix Extension
+Extension: SD_UICC_TNM_Suffix_ITC
+Id: uicc-tnm-suffix-itc
+Title: "Extension UICC TNM Suffix ITC"
+Description: "Die Extension verleiht TNM N- und M-Kategorien isolierte Tumorzellen (ITC) Suffixe."
+* ^url = "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc"
+* value[x] only CodeableConcept
+* value[x] from VS_TNM_Suffix_ITC_UICC (required)
+
+// Sentinel lymph nodes Suffix Extension
+Extension: SD_UICC_TNM_Suffix_SN
+Id: uicc-tnm-suffix-sn
+Title: "Extension UICC TNM Suffix SN"
+Description: "Die Extension verleiht der TNM N-Kategorie das Schildwächterlymphknoten (Sentinel Lymph Node) Suffix."
+* ^url = "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-sn"
+* value[x] only CodeableConcept
+* value[x] from VS_TNM_Suffix_SN_UICC (required)
 
 Extension: TreatmentIntent
 Title: "Intent Behandlung"
