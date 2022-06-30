@@ -1,0 +1,37 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-R0",
+  "meta": {
+    "profile": [
+      "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "84892-9",
+        "system": "http://loinc.org",
+        "display": "Residual tumor classification [Type] in Cancer specimen"
+      },
+      {
+        "code": "17964000",
+        "system": "http://snomed.info/sct",
+        "display": "Residual tumor stage (observable entity)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/Beispielpatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "R0",
+        "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+        "display": "R0"
+      }
+    ]
+  }
+}

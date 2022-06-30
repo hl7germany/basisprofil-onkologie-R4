@@ -1,0 +1,881 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "UICC",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://fhir.de/onkologie/StructureDefinition/UICC",
+  "version": "0.1.0",
+  "name": "UICC_TNM",
+  "title": "Observation-Profil für UICC",
+  "status": "active",
+  "description": "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "snomed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "code": "258235000",
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-klassifikation-typ-loinc"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-stadien-uicc"
+        }
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.hasMember:R-Klassifikation",
+        "path": "Observation.hasMember",
+        "sliceName": "R-Klassifikation",
+        "short": "Residualtumor- (R-)Klassifikation",
+        "definition": "Das Fehlen oder Vorhandensein von Residualtumor (Resttumor) nach Behandlung wird durch die R-Klassifikation beschrieben.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:y-Symbol",
+        "path": "Observation.component",
+        "sliceName": "y-Symbol",
+        "short": "y-Symbol",
+        "definition": "Wenn die Klassifikation während oder nach initialer multimodaler Therapie erfolgt, werden die TNM- oder pTNM-Kategorien durch das y-Präfix gekennzeichnet.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:y-Symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "277649004",
+              "system": "http://snomed.info/sct",
+              "display": "y - During therapy/following treatment (tumor staging)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:y-Symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "y",
+              "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+              "display": "y"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:r-Symbol",
+        "path": "Observation.component",
+        "sliceName": "r-Symbol",
+        "short": "r-Symbol",
+        "definition": "Rezidivtumoren nach krankheitsfreiem Intervall werden durch das r-Präfix gekennzeichnet.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:r-Symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "277647002",
+              "system": "http://snomed.info/sct",
+              "display": "r - Tumor recurrence (tumor staging)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:r-Symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "r",
+              "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+              "display": "r"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:a-Symbol",
+        "path": "Observation.component",
+        "sliceName": "a-Symbol",
+        "short": "a-Symbol",
+        "definition": "Das a-Symbol kennzeichnet Fälle, bei denen die Klassifikation erst anlässlich einer Autopsie erfolgte.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:a-Symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "277646006",
+              "system": "http://snomed.info/sct",
+              "display": "a - At autopsy (tumor staging)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:a-Symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "a",
+              "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+              "display": "a"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:T-Code",
+        "path": "Observation.component",
+        "sliceName": "T-Code",
+        "short": "T - Primärtumor",
+        "definition": "Ausbreitung des Primärtumors",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:T-Code.extension:cpPraefix",
+        "path": "Observation.component.extension",
+        "sliceName": "cpPraefix",
+        "short": "Klinische oder pathologische Klassifikation",
+        "definition": "Wie die TNM-Werte bestimmt wurden: durch prätherapeutisch klinische Klassifikation oder postoperative histopathologische Klassifikation.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:T-Code.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-t-kategorie-typ-loinc"
+        }
+      },
+      {
+        "id": "Observation.component:T-Code.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-t-kategorie-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:m-Symbol",
+        "path": "Observation.component",
+        "sliceName": "m-Symbol",
+        "short": "m-Symbol",
+        "definition": "Das Suffix „m“, in Klammern gesetzt, wird benutzt, um multiple Primärtumoren in einem anatomischen Bezirk anzuzeigen.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:m-Symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "277650004",
+              "system": "http://snomed.info/sct",
+              "display": "m - Multiple tumors (tumor staging)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:m-Symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-t-multiplizitaet-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:N-Code",
+        "path": "Observation.component",
+        "sliceName": "N-Code",
+        "short": "N - Regionäre Lymphknoten",
+        "definition": "Die N-Kategorie beschreibt das Fehlen oder Vorhandensein und Ausbreitung von regionären Lymphknotenmetastasen.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:N-Code.extension:cpPraefix",
+        "path": "Observation.component.extension",
+        "sliceName": "cpPraefix",
+        "short": "Klinische oder pathologische Klassifikation",
+        "definition": "Wie die TNM-Werte bestimmt wurden: durch prätherapeutisch klinische Klassifikation oder postoperative histopathologische Klassifikation.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:N-Code.extension:itcSuffix",
+        "path": "Observation.component.extension",
+        "sliceName": "itcSuffix",
+        "short": "Isolierte Tumorzellen",
+        "definition": "Unter isolierten Tumorzellen (ITC) versteht man einzelne Tumorzellen oder kleine Kluster von Zellen, die nicht größer als 0,2 mm im Durchmesser sind und die üblicherweise durch immunhistochemische oder molekularbiologische Methoden entdeckt werden, aber auch mit der HE-Färbung nachgewiesen werden können.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:N-Code.extension:snSuffix",
+        "path": "Observation.component.extension",
+        "sliceName": "snSuffix",
+        "short": "Schildwächterlymphknoten (Sentinel Lymph Node)",
+        "definition": "Der Schildwächterlymphknoten ist der erste Lymphknoten, der die abfließende Lymphe des Primärtumors aufnimmt.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-sn"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:N-Code.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/ValueSet/tnm-n-kategorie-typ-loinc"
+        }
+      },
+      {
+        "id": "Observation.component:N-Code.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-n-kategorie-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:M-Code",
+        "path": "Observation.component",
+        "sliceName": "M-Code",
+        "short": "M - Fernmetastasen",
+        "definition": "Die M-Kategorie beschreibt das Fehlen oder Vorhandensein von Fernmetastasen.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:M-Code.extension:cpPraefix",
+        "path": "Observation.component.extension",
+        "sliceName": "cpPraefix",
+        "short": "Klinische oder pathologische Klassifikation",
+        "definition": "Wie die TNM-Werte bestimmt wurden: durch prätherapeutisch klinische Klassifikation oder postoperative histopathologische Klassifikation.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:M-Code.extension:itcSuffix",
+        "path": "Observation.component.extension",
+        "sliceName": "itcSuffix",
+        "short": "Isolierte Tumorzellen",
+        "definition": "Unter isolierten Tumorzellen (ITC) versteht man einzelne Tumorzellen oder kleine Kluster von Zellen, die nicht größer als 0,2 mm im Durchmesser sind und die üblicherweise durch immunhistochemische oder molekularbiologische Methoden entdeckt werden, aber auch mit der HE-Färbung nachgewiesen werden können.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:M-Code.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-m-kategorie-typ-loinc"
+        }
+      },
+      {
+        "id": "Observation.component:M-Code.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-m-kategorie-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:L-Deskriptor",
+        "path": "Observation.component",
+        "sliceName": "L-Deskriptor",
+        "short": "L - Lymphgefäßinvasion",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:L-Deskriptor.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "33739-4",
+              "system": "http://loinc.org",
+              "display": "Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:L-Deskriptor.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-l-lymphgefaessinvasion-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:V-Deskriptor",
+        "path": "Observation.component",
+        "sliceName": "V-Deskriptor",
+        "short": "V - Veneninvasion",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:V-Deskriptor.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "33740-2",
+              "system": "http://loinc.org",
+              "display": "Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:V-Deskriptor.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-v-veneninvasion-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:Pn-Deskriptor",
+        "path": "Observation.component",
+        "sliceName": "Pn-Deskriptor",
+        "short": "Pn - Perineurale Invasion",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:Pn-Deskriptor.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "92837-4",
+              "system": "http://loinc.org",
+              "display": "Perineural invasion [Presence] in Cancer specimen"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:Pn-Deskriptor.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-pn-perineurale-invasion-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:S-Symbol",
+        "path": "Observation.component",
+        "sliceName": "S-Symbol",
+        "short": "Serumtumormarker",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:S-Symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "399424006",
+              "system": "http://snomed.info/sct",
+              "display": "Serum tumor marker category (observable entity)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:S-Symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-s-serumtumormarker-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenBefallen",
+        "path": "Observation.component",
+        "sliceName": "anzahlLymphknotenBefallen",
+        "short": "Anzahl der von Tumor befallenen regionären Lymphknoten",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenBefallen.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "21893-3",
+              "system": "http://loinc.org",
+              "display": "Regional lymph nodes positive [#] Specimen"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenBefallen.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenBefallen.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenBefallen.valueQuantity.system",
+        "path": "Observation.component.valueQuantity.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenBefallen.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "patternCode": "1"
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenUntersucht",
+        "path": "Observation.component",
+        "sliceName": "anzahlLymphknotenUntersucht",
+        "short": "Anzahl der untersuchten regionären Lymphknoten",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenUntersucht.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "21894-1",
+              "system": "http://loinc.org",
+              "display": "Regional lymph nodes examined [#] Specimen"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenUntersucht.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenUntersucht.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenUntersucht.valueQuantity.system",
+        "path": "Observation.component.valueQuantity.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:anzahlLymphknotenUntersucht.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "patternCode": "1"
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenBefallen",
+        "path": "Observation.component",
+        "sliceName": "anzahlSchildwaechterlymphknotenBefallen",
+        "short": "Anzahl der von Tumor befallenen Schildwächterlymphknoten",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenBefallen.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "98278-5",
+              "system": "http://loinc.org",
+              "display": "Sentinel lymph nodes with metastasis [#] in Cancer specimen"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenBefallen.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenBefallen.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenBefallen.valueQuantity.system",
+        "path": "Observation.component.valueQuantity.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenBefallen.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "patternCode": "1"
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenUntersucht",
+        "path": "Observation.component",
+        "sliceName": "anzahlSchildwaechterlymphknotenUntersucht",
+        "short": "Anzahl der untersuchten Schildwächterlymphknoten",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenUntersucht.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "85347-3",
+              "system": "http://loinc.org",
+              "display": "Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenUntersucht.value[x]",
+        "path": "Observation.component.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenUntersucht.valueQuantity",
+        "path": "Observation.component.valueQuantity",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenUntersucht.valueQuantity.system",
+        "path": "Observation.component.valueQuantity.system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:anzahlSchildwaechterlymphknotenUntersucht.valueQuantity.code",
+        "path": "Observation.component.valueQuantity.code",
+        "patternCode": "1"
+      }
+    ]
+  }
+}

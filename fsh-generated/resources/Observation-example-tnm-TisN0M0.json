@@ -1,0 +1,99 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-TisN0M0",
+  "meta": {
+    "profile": [
+      "http://fhir.de/onkologie/StructureDefinition/UICC"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "258235000",
+        "system": "http://snomed.info/sct",
+        "display": "International Union Against Cancer (tumor staging)"
+      },
+      {
+        "code": "21908-9",
+        "system": "http://loinc.org",
+        "display": "Stage group.clinical Cancer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Beispielpatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "0",
+        "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+        "display": "Stage 0"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21905-5",
+            "system": "http://loinc.org",
+            "display": "Primary tumor.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Tis",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "Tis"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21906-3",
+            "system": "http://loinc.org",
+            "display": "Regional lymph nodes.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "N0",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "N0"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21907-1",
+            "system": "http://loinc.org",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "M0",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "M0"
+          }
+        ]
+      }
+    }
+  ]
+}

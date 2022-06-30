@@ -1,0 +1,165 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-cT3pN0mol-sncM1",
+  "meta": {
+    "profile": [
+      "http://fhir.de/onkologie/StructureDefinition/UICC"
+    ]
+  },
+  "component": [
+    {
+      "extension": [
+        {
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "c",
+                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "display": "c"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21905-5",
+            "system": "http://loinc.org",
+            "display": "Primary tumor.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "T3",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "T3"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "p",
+                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "display": "p"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "mol-",
+                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "display": "(mol-)"
+              }
+            ]
+          }
+        },
+        {
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-sn",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "sn",
+                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "display": "(sn)"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21900-6",
+            "system": "http://loinc.org",
+            "display": "Regional lymph nodes.pathology [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "N0",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "N0"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "c",
+                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "display": "c"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21907-1",
+            "system": "http://loinc.org",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "M1",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "M1"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "258235000",
+        "system": "http://snomed.info/sct",
+        "display": "International Union Against Cancer (tumor staging)"
+      },
+      {
+        "code": "21902-2",
+        "system": "http://loinc.org",
+        "display": "Stage group.pathology Cancer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/Beispielpatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "IVC",
+        "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+        "display": "Stage IVC"
+      }
+    ]
+  }
+}
