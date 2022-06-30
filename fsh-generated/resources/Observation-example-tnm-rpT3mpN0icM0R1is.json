@@ -3,7 +3,7 @@
   "id": "example-tnm-rpT3mpN0icM0R1is",
   "meta": {
     "profile": [
-      "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
+      "http://fhir.de/onkologie/StructureDefinition/UICC"
     ]
   },
   "component": [
@@ -16,12 +16,30 @@
             "display": "r - Tumor recurrence (tumor staging)"
           }
         ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "r",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "r"
+          }
+        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "p",
+                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "display": "p"
+              }
+            ]
+          }
         }
       ],
       "code": {
@@ -30,6 +48,15 @@
             "code": "21899-0",
             "system": "http://loinc.org",
             "display": "Primary tumor.pathology Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "T3",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "T3"
           }
         ]
       }
@@ -43,15 +70,42 @@
             "display": "m - Multiple tumors (tumor staging)"
           }
         ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "m",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "(m)"
+          }
+        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "p",
+                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "display": "p"
+              }
+            ]
+          }
         },
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc"
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "i+",
+                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "display": "(i+)"
+              }
+            ]
+          }
         }
       ],
       "code": {
@@ -62,12 +116,30 @@
             "display": "Regional lymph nodes.pathology [Class] Cancer"
           }
         ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "N0",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "N0"
+          }
+        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "c",
+                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "display": "c"
+              }
+            ]
+          }
         }
       ],
       "code": {
@@ -76,6 +148,15 @@
             "code": "21907-1",
             "system": "http://loinc.org",
             "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "M0",
+            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "display": "M0"
           }
         ]
       }
@@ -100,6 +181,15 @@
     "reference": "Patient/Beispielpatient"
   },
   "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "IIB",
+        "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+        "display": "Stage IIB"
+      }
+    ]
+  },
   "hasMember": [
     {
       "reference": "Observation/example-tnm-R1"

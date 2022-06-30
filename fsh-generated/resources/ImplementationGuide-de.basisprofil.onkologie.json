@@ -97,15 +97,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/sd-uicc-tnm"
-        },
-        "name": "Observation-Profil für UICC-TNM",
-        "description": "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/sd-uicc-tnm-r-klassifikation"
+          "reference": "StructureDefinition/sd-UICC-r-klassifikation"
         },
         "name": "Observation-Profil UICC TNM Residualtumor- (R-)Klassifikation",
         "description": "Observation-Profil für die Residualtumor- (R-)Klassifikation.",
@@ -138,6 +130,14 @@
           "reference": "StructureDefinition/TumorstatusFernmetastasen"
         },
         "name": "TumorstatusFernmetastasen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/UICC"
+        },
+        "name": "Observation-Profil für UICC",
+        "description": "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren.",
         "exampleBoolean": false
       },
       {
@@ -330,10 +330,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/vs-tnm-l-lymphgefaessinvasion-uicc"
+        },
+        "name": "ValueSet TNM L-Deskriptor Lymphgefäßinvasion UICC",
+        "description": "Das ValueSet enthält die TNM Codes für die Beurteilung der Lymphgefäßinvasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/vs-tnm-m-kategorie-typ-loinc"
         },
         "name": "ValueSet TNM M-Kategorie Typ LOINC",
         "description": "Das ValueSet enthält Codes zur Differenzierung der TNM Fernmetastasen (M) Kategorie als entweder klinisch (cM) oder pathologisch (pM).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-m-kategorie-uicc"
+        },
+        "name": "ValueSet TNM M Kategorie UICC",
+        "description": "Das ValueSet enthält die TNM M-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
         "exampleBoolean": false
       },
       {
@@ -346,10 +362,98 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/vs-tnm-n-kategorie-uicc"
+        },
+        "name": "ValueSet TNM N Kategorie UICC",
+        "description": "Das ValueSet enthält die TNM N-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-pn-perineurale-invasion-uicc"
+        },
+        "name": "ValueSet TNM Pn-Deskriptor Perineurale Invasion UICC",
+        "description": "Das ValueSet enthält die TNM Codes für den Grad der perineuralen Invasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-praefix-cp-uicc"
+        },
+        "name": "ValueSet TNM Praefix CP UICC",
+        "description": "Das ValueSet enthält die c und p Präfixe für die T-, N- oder M-Kategorien aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-r-klassifikation-uicc"
+        },
+        "name": "ValueSet TNM Residualtumor- (R-)Klassifikation UICC",
+        "description": "Das ValueSet enthält Codes für die TNM Residualtumor- (R-)Klassifikation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-s-serumtumormarker-uicc"
+        },
+        "name": "ValueSet TNM S Serumtumormarker UICC",
+        "description": "Das ValueSet enthält die TNM Codes für Serumtumormarker aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-stadien-uicc"
+        },
+        "name": "ValueSet TNM Stadien UICC",
+        "description": "The ValueSet enthält Codes für die TNM-Stadien zur prognostischen Gruppeneinteilung von Patienten.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-suffix-itc-uicc"
+        },
+        "name": "ValueSet TNM Suffix ITC UICC",
+        "description": "Das ValueSet enthält die isolierten Tumorzellen (ITC) Suffixe für die N- und M-Kategorien aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-suffix-sn-uicc"
+        },
+        "name": "ValueSet TNM Suffix SN UICC",
+        "description": "Das ValueSet enthält das Schildwächterlymphknoten (Sentinel Lymph Node) Suffix für die N-Kategorie aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/vs-tnm-t-kategorie-typ-loinc"
         },
         "name": "ValueSet TNM T-Kategorie Typ LOINC",
         "description": "Das ValueSet enthält Codes zur Differenzierung der TNM Primärtumor (T) Kategorie als entweder klinisch (cT) oder pathologisch (pT).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-t-kategorie-uicc"
+        },
+        "name": "ValueSet TNM T-Kategorie UICC",
+        "description": "Das ValueSet enthält die TNM T-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-t-multiplizitaet-uicc"
+        },
+        "name": "ValueSet TNM T Multiplizitaet UICC",
+        "description": "Das ValueSet enthält die TNM Primärtumor Multiplizität Codes zur Verwendung mit dem m-Symbol aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-v-veneninvasion-uicc"
+        },
+        "name": "ValueSet TNM V-Deskriptor Veneninvasion UICC",
+        "description": "Das ValueSet enthält die TNM Codes für die Beurteilung der Veneninvasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
         "exampleBoolean": false
       },
       {
@@ -515,7 +619,7 @@
         },
         "name": "Example TNM R0",
         "description": "Example TNM R0.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-r-klassifikation"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
       },
       {
         "reference": {
@@ -523,7 +627,7 @@
         },
         "name": "Example TNM R1",
         "description": "Example TNM R1.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-r-klassifikation"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
       },
       {
         "reference": {
@@ -531,7 +635,7 @@
         },
         "name": "Example TNM Tis N0 M0",
         "description": "Example TNM Tis N0 M0.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
       },
       {
         "reference": {
@@ -539,7 +643,7 @@
         },
         "name": "Example TNM cT3 pN0 (mol-)(sn) cM1",
         "description": "Example TNM cT3 pN0 (mol-)(sn) cM1.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
       },
       {
         "reference": {
@@ -547,7 +651,7 @@
         },
         "name": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)",
         "description": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is).",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
       },
       {
         "reference": {
@@ -555,7 +659,7 @@
         },
         "name": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1",
         "description": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
       },
       {
         "reference": {
@@ -563,7 +667,7 @@
         },
         "name": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0",
         "description": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
       }
     ],
     "page": {

@@ -18,6 +18,10 @@
             "display": "GX grade (finding)"
           },
           {
+            "code": "313147000",
+            "display": "Tumor grade G0"
+          },
+          {
             "code": "54102005",
             "display": "G1 grade (finding)"
           },
@@ -32,6 +36,14 @@
           {
             "code": "258245003",
             "display": "G4 grade (finding)"
+          },
+          {
+            "code": "60815008",
+            "display": "Grade not determined"
+          },
+          {
+            "code": "313117002",
+            "display": "Tumor grade GB"
           }
         ]
       }

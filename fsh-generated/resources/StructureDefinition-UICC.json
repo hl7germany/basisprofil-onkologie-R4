@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-uicc-tnm",
+  "id": "UICC",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,10 +11,10 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm",
+  "url": "http://fhir.de/onkologie/StructureDefinition/UICC",
   "version": "0.1.0",
-  "name": "SD_UICC_TNM",
-  "title": "Observation-Profil für UICC-TNM",
+  "name": "UICC_TNM",
+  "title": "Observation-Profil für UICC",
   "status": "active",
   "description": "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren.",
   "fhirVersion": "4.0.1",
@@ -151,7 +151,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-r-klassifikation"
+              "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
             ]
           }
         ]
@@ -198,7 +198,16 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "y",
+              "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+              "display": "y"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.component:r-Symbol",
@@ -229,7 +238,16 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "r",
+              "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+              "display": "r"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.component:a-Symbol",
@@ -260,7 +278,16 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "a",
+              "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+              "display": "a"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.component:T-Code",
@@ -303,7 +330,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-t-kategorie-uicc"
+        }
       },
       {
         "id": "Observation.component:m-Symbol",
@@ -334,7 +365,11 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-t-multiplizitaet-uicc"
+        }
       },
       {
         "id": "Observation.component:N-Code",

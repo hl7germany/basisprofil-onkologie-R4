@@ -3,7 +3,7 @@
   "id": "example-tnm-R0",
   "meta": {
     "profile": [
-      "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-r-klassifikation"
+      "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
     ]
   },
   "code": {
@@ -24,5 +24,14 @@
   "subject": {
     "reference": "Patient/Beispielpatient"
   },
-  "effectiveDateTime": "2022-03-07"
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "R0",
+        "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+        "display": "R0"
+      }
+    ]
+  }
 }
