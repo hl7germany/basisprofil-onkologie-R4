@@ -65,82 +65,15 @@ Description: "Das ValueSet enthält Codes zur Differenzierung der TNM Primärtum
 * LNC#21899-0 "Primary tumor.pathology Cancer"
 //* LNC#21911-3 "Primary tumor.other [Class] Cancer"
 
-// TNM T Kategorie Werte
-ValueSet: VS_TNM_T_Kategorie_UICC
-Id: vs-tnm-t-kategorie-uicc
-Title: "ValueSet TNM T-Kategorie UICC"
-Description: "Das ValueSet enthält die TNM T-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-t-kategorie-uicc"
-* UICC-TNM#TX	"TX"
-* UICC-TNM#T0	"T0"
-* UICC-TNM#Ta	"Ta"
-* UICC-TNM#Tis	"Tis"
-* UICC-TNM#Tis(LAMN)	"Tis(LAMN)"
-* UICC-TNM#Tis(DCIS)	"Tis(DCIS)"
-* UICC-TNM#Tis(LCIS)	"Tis(LCIS)"
-* UICC-TNM#Tis(Paget)	"Tis(Paget)"
-* UICC-TNM#Tis(pu)	"Tis(pu)"
-* UICC-TNM#Tis(pd)	"Tis(pd)"
-* UICC-TNM#T1	"T1"
-* UICC-TNM#T1mi	"T1mi"
-* UICC-TNM#T1a	"T1a"
-* UICC-TNM#T1a1	"T1a1"
-* UICC-TNM#T1a2	"T1a2"
-* UICC-TNM#T1b	"T1b"
-* UICC-TNM#T1b1	"T1b1"
-* UICC-TNM#T1b2	"T1b2"
-* UICC-TNM#T1c	"T1c"
-* UICC-TNM#T1c1	"T1c1"
-* UICC-TNM#T1c2	"T1c2"
-* UICC-TNM#T1c3	"T1c3"
-* UICC-TNM#T1d	"T1d"
-* UICC-TNM#T2	"T2"
-* UICC-TNM#T2a	"T2a"
-* UICC-TNM#T2a1	"T2a1"
-* UICC-TNM#T2a2	"T2a2"
-* UICC-TNM#T2b	"T2b"
-* UICC-TNM#T2c	"T2c"
-* UICC-TNM#T2d	"T2d"
-* UICC-TNM#T3	"T3"
-* UICC-TNM#T3a	"T3a"
-* UICC-TNM#T3b	"T3b"
-* UICC-TNM#T3c	"T3c"
-* UICC-TNM#T3d	"T3d"
-* UICC-TNM#T3e	"T3e"
-* UICC-TNM#T4	"T4"
-* UICC-TNM#T4a	"T4a"
-* UICC-TNM#T4b	"T4b"
-* UICC-TNM#T4c	"T4c"
-* UICC-TNM#T4d	"T4d"
-* UICC-TNM#T4e	"T4e"
+ValueSet: ICDO3Morphologie
+Id: icd-o-3-morphologie
+Title: "Morphologie Codes des ICD-O-3 CodeSystems."
+* include codes from system ICDO3 where concept regex /^\d\S*$/
 
-// TNM T Kategorie Multiplizität
-ValueSet: VS_TNM_T_Multiplizitaet_UICC
-Id: vs-tnm-t-multiplizitaet-uicc
-Title: "ValueSet TNM T Multiplizitaet UICC"
-Description: "Das ValueSet enthält die TNM Primärtumor Multiplizität Codes zur Verwendung mit dem m-Symbol aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-t-multiplizitaet-uicc"
-* UICC-TNM#m "(m)"
-* UICC-TNM#2 "(2)"
-* UICC-TNM#3 "(3)"
-* UICC-TNM#4 "(4)"
-* UICC-TNM#5 "(5)"
-* UICC-TNM#6 "(6)"
-* UICC-TNM#7 "(7)"
-* UICC-TNM#8 "(8)"
-* UICC-TNM#9 "(9)"
-* UICC-TNM#10 "(10)"
-
-// TNM ITC Suffixe
-ValueSet: VS_TNM_Suffix_ITC_UICC
-Id: vs-tnm-suffix-itc-uicc
-Title: "ValueSet TNM Suffix ITC UICC"
-Description: "Das ValueSet enthält die isolierten Tumorzellen (ITC) Suffixe für die N- und M-Kategorien aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-suffix-itc-uicc"
-* UICC-TNM#i+ "(i+)"
-* UICC-TNM#i- "(i-)"
-* UICC-TNM#mol+ "(mol+)"
-* UICC-TNM#mol- "(mol-)"
+ValueSet: ICDO3Topologie
+Id: icd-o-3-topologie
+Title: "Topologie Codes des ICD-O-3 CodeSystems."
+* include codes from system ICDO3 where concept regex /^C\S*$/
 
 // TNM SN Suffix
 ValueSet: VS_TNM_Suffix_SN_UICC

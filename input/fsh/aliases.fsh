@@ -34,22 +34,23 @@ Alias:   v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: WorkFlowEpisodeOfCare = http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare
 
 //TNM related
-Alias:  TNM = https://cancerstaging.org // https://terminology.hl7.org/CodeSystem-TNM.html
-Alias:  UICC-TNM = urn:oid:2.16.840.1.113883.15.16
+Alias: UICC = http://fhir.de/CodeSystem/PlaceHolderUICC
+//Alias: TNM = https://cancerstaging.org // https://terminology.hl7.org/CodeSystem-TNM.html
+//Alias: UICC-TNM = urn:oid:2.16.840.1.113883.15.16
 //Alias: TCode = urn:oid:2.16.840.1.113883.15.16
 //Alias: NCode = urn:oid:1.3.6.1.4.1.19376.1.3.11.44
 //Alias: MCode = urn:oid:1.3.6.1.4.1.19376.1.3.11.45
 //Alias: UICCTNM = http://www.uicc.org/resources/tnm/stage
-Alias: TNMPRAEFIXAOID = urn:oid:2.16.840.1.113883.15.16
-Alias: TNMPRAEFIXS = urn:oid:1.2.276.0.76.3.1.131.1.5.1
+//Alias: TNMPRAEFIXAOID = urn:oid:2.16.840.1.113883.15.16
+//Alias: TNMPRAEFIXS = urn:oid:1.2.276.0.76.3.1.131.1.5.1
 //todo: set correct URI for TNMPRAEFIXL & TNMPRAEFIXV
-Alias: TNMPRAEFIXL = urn:oid:1.2.276.0.76.3.1.131.1.5.1
-Alias: TNMPRAEFIXV = urn:oid:1.2.276.0.76.3.1.131.1.5.1
-Alias: COMPARATORCS = http://hl7.org/fhir/quantity-comparator
-Alias: DATAABSENTREASONCS = http://terminology.hl7.org/CodeSystem/data-absent-reason
-Alias: INTERPRETATIONCS = http://terminology.hl7.org/CodeSystem/v2-0078
-Alias: PROVISIONCS = http://hl7.org/fhir/consent-provision-type
-Alias: TNMPRAEFIXCPU = http://molit.eu/fhir/vitu/Extension/praefixcpu
+//Alias: TNMPRAEFIXL = urn:oid:1.2.276.0.76.3.1.131.1.5.1
+//Alias: TNMPRAEFIXV = urn:oid:1.2.276.0.76.3.1.131.1.5.1
+//Alias: COMPARATORCS = http://hl7.org/fhir/quantity-comparator
+//Alias: DATAABSENTREASONCS = http://terminology.hl7.org/CodeSystem/data-absent-reason
+//Alias: INTERPRETATIONCS = http://terminology.hl7.org/CodeSystem/v2-0078
+//Alias: PROVISIONCS = http://hl7.org/fhir/consent-provision-type
+//Alias: TNMPRAEFIXCPU = http://molit.eu/fhir/vitu/Extension/praefixcpu
 
 //BasisProfile-DE
 Alias: ICD10Coding = http://fhir.de/StructureDefinition/CodingICD10GM

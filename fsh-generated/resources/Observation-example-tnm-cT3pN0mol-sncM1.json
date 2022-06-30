@@ -10,16 +10,7 @@
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "c",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "c"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
         }
       ],
       "code": {
@@ -30,54 +21,18 @@
             "display": "Primary tumor.clinical [Class] Cancer"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "T3",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "T3"
-          }
-        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "p",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "p"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
         },
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "mol-",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "(mol-)"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc"
         },
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-sn",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "sn",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "(sn)"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-sn"
         }
       ],
       "code": {
@@ -88,30 +43,12 @@
             "display": "Regional lymph nodes.pathology [Class] Cancer"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "N0",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "N0"
-          }
-        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "c",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "c"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
         }
       ],
       "code": {
@@ -120,15 +57,6 @@
             "code": "21907-1",
             "system": "http://loinc.org",
             "display": "Distant metastases.clinical [Class] Cancer"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "M1",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "M1"
           }
         ]
       }
@@ -152,14 +80,5 @@
   "subject": {
     "reference": "Patient/Beispielpatient"
   },
-  "effectiveDateTime": "2022-03-07",
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "code": "IVC",
-        "system": "urn:oid:2.16.840.1.113883.15.16",
-        "display": "Stage IVC"
-      }
-    ]
-  }
+  "effectiveDateTime": "2022-03-07"
 }

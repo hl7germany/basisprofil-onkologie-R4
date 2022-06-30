@@ -25,15 +25,6 @@
     "reference": "Patient/Beispielpatient"
   },
   "effectiveDateTime": "2022-03-07",
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "code": "0",
-        "system": "urn:oid:2.16.840.1.113883.15.16",
-        "display": "Stage 0"
-      }
-    ]
-  },
   "component": [
     {
       "code": {
@@ -42,15 +33,6 @@
             "code": "21905-5",
             "system": "http://loinc.org",
             "display": "Primary tumor.clinical [Class] Cancer"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "Tis",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "Tis"
           }
         ]
       }
@@ -64,15 +46,6 @@
             "display": "Regional lymph nodes.clinical [Class] Cancer"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "N0",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "N0"
-          }
-        ]
       }
     },
     {
@@ -82,15 +55,6 @@
             "code": "21907-1",
             "system": "http://loinc.org",
             "display": "Distant metastases.clinical [Class] Cancer"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "M0",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "M0"
           }
         ]
       }

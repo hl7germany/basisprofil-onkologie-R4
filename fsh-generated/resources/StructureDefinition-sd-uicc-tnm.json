@@ -198,16 +198,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "y",
-              "system": "urn:oid:2.16.840.1.113883.15.16",
-              "display": "y"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "Observation.component:r-Symbol",
@@ -238,16 +229,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "r",
-              "system": "urn:oid:2.16.840.1.113883.15.16",
-              "display": "r"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "Observation.component:a-Symbol",
@@ -278,16 +260,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "a",
-              "system": "urn:oid:2.16.840.1.113883.15.16",
-              "display": "a"
-            }
-          ]
-        }
+        ]
       },
       {
         "id": "Observation.component:T-Code",
@@ -297,20 +270,6 @@
         "definition": "Ausbreitung des Primärtumors",
         "min": 0,
         "max": "1"
-      },
-      {
-        "id": "Observation.component:T-Code.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.component:T-Code.extension:cpPraefix",
@@ -344,11 +303,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-t-kategorie-uicc"
-        }
+        ]
       },
       {
         "id": "Observation.component:m-Symbol",
@@ -379,11 +334,7 @@
           {
             "code": "CodeableConcept"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-t-multiplizitaet-uicc"
-        }
+        ]
       },
       {
         "id": "Observation.component:N-Code",
@@ -393,20 +344,6 @@
         "definition": "Die N-Kategorie beschreibt das Fehlen oder Vorhandensein und Ausbreitung von regionären Lymphknotenmetastasen.",
         "min": 0,
         "max": "1"
-      },
-      {
-        "id": "Observation.component:N-Code.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.component:N-Code.extension:cpPraefix",
@@ -488,20 +425,6 @@
         "definition": "Die M-Kategorie beschreibt das Fehlen oder Vorhandensein von Fernmetastasen.",
         "min": 0,
         "max": "1"
-      },
-      {
-        "id": "Observation.component:M-Code.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.component:M-Code.extension:cpPraefix",

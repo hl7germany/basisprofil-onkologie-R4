@@ -16,30 +16,12 @@
             "display": "y - During therapy/following treatment (tumor staging)"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "y",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "y"
-          }
-        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "p",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "p"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
         }
       ],
       "code": {
@@ -50,42 +32,15 @@
             "display": "Primary tumor.pathology Cancer"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "T1b",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "T1b"
-          }
-        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "p",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "p"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
         },
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-sn",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "sn",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "(sn)"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-sn"
         }
       ],
       "code": {
@@ -96,30 +51,12 @@
             "display": "Regional lymph nodes.pathology [Class] Cancer"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "N1",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "N1"
-          }
-        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "c",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "c"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
         }
       ],
       "code": {
@@ -128,15 +65,6 @@
             "code": "21907-1",
             "system": "http://loinc.org",
             "display": "Distant metastases.clinical [Class] Cancer"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "M0",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "M0"
           }
         ]
       }
@@ -150,15 +78,6 @@
             "display": "Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "L0",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "L0"
-          }
-        ]
       }
     },
     {
@@ -170,15 +89,6 @@
             "display": "Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "V0",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "V0"
-          }
-        ]
       }
     },
     {
@@ -188,15 +98,6 @@
             "code": "92837-4",
             "system": "http://loinc.org",
             "display": "Perineural invasion [Presence] in Cancer specimen"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "Pn1",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "Pn1"
           }
         ]
       }
@@ -253,15 +154,6 @@
     "reference": "Patient/Beispielpatient"
   },
   "effectiveDateTime": "2022-03-07",
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "code": "IIIB",
-        "system": "urn:oid:2.16.840.1.113883.15.16",
-        "display": "Stage IIIB"
-      }
-    ]
-  },
   "hasMember": [
     {
       "reference": "Observation/example-tnm-R0"

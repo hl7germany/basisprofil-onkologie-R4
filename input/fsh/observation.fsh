@@ -1,93 +1,17 @@
-//Profile: TumorHistologieMorphologie
-//Title: "Tumor Histologie und Morphologie"
-//Parent: Observation
-//* code = LNC#59847-4
-//* bodySite from ICDO3Topologie (required)
-//* subject only Reference(Patient or Group)
-//* value[x] only CodeableConcept
-//* value[x] from ICDO3Morphologie (required)
-
-// Morphology(Histology) / Topography
-Profile: SD_Tumor_Histologie_Topographie
+Profile: TumorHistologieMorphologie
+Title: "Tumor Histologie und Morphologie"
 Parent: Observation
-Id: sd-tumor-histologie-topographie
-Title: "Observation-Profil Tumor Histologie Topographie"
-Description: "Observation-Profil für die Klassifikation der Tumor Morphologie(Histologie) und Topographie mittels ICD-O-3."
-* ^url = "http://fhir.de/onkologie/StructureDefinition/tumor-histologie-topographie"
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
-* category contains laboratory 1..*
-* category[laboratory] = ObsCat#laboratory
-* code.coding ^slicing.discriminator.type = #pattern
-* code.coding ^slicing.discriminator.path = "$this"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    loinc 1..* and
-    snomed_hist 0..* and
-    snomed_topo 0..*
-* code.coding[loinc] = LNC#59847-4
-* code.coding[loinc].system 1..
-* code.coding[loinc].code 1..
-* code.coding[snomed_hist] = SCT#1145214003
-* code.coding[snomed_hist].system 1..
-* code.coding[snomed_hist].code 1..
-* code.coding[snomed_topo] = SCT#371480007
-* code.coding[snomed_topo].system 1..
-* code.coding[snomed_topo].code 1..
-* subject 1..1
-* subject only Reference(Patient)
+* code = LNC#59847-4
+* bodySite from ICDO3Topologie (required)
+* subject only Reference(Patient or Group)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
-* valueCodeableConcept.coding ^slicing.rules = #open
-* valueCodeableConcept.coding contains
-    morphologieICD-O-3 1..1 MS and
-    morphologieSnomed 0..1
-* valueCodeableConcept.coding[morphologieICD-O-3] from VS_Morphologie_ICD_O_3 (required)
-* valueCodeableConcept.coding[morphologieICD-O-3] ^patternCoding.system = "http://terminology.hl7.org/CodeSystem/icd-o-3"
-* valueCodeableConcept.coding[morphologieICD-O-3].system 1..
-* valueCodeableConcept.coding[morphologieICD-O-3].code 1..
-* valueCodeableConcept.coding[morphologieSnomed] from VS_Morphologie_SNOMED (required)
-* valueCodeableConcept.coding[morphologieSnomed] ^patternCoding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding[morphologieSnomed].system 1..
-* valueCodeableConcept.coding[morphologieSnomed].code 1..
-* bodySite.coding ^slicing.discriminator.type = #pattern
-* bodySite.coding ^slicing.discriminator.path = "$this"
-* bodySite.coding ^slicing.rules = #open
-* bodySite.coding contains
-    topographieICD-O-3 1..1 MS and
-    topographieSnomed 0..1
-* bodySite.coding[topographieICD-O-3] from VS_Topographie_ICD_O_3 (required)
-* bodySite.coding[topographieICD-O-3] ^patternCoding.system = "http://terminology.hl7.org/CodeSystem/icd-o-3"
-* bodySite.coding[topographieICD-O-3].system 1..
-* bodySite.coding[topographieICD-O-3].code 1..
-* bodySite.coding[topographieSnomed] from VS_Topographie_SNOMED (required)
-* bodySite.coding[topographieSnomed] ^patternCoding.system = "http://snomed.info/sct"
-* bodySite.coding[topographieSnomed].system 1..
-* bodySite.coding[topographieSnomed].code 1..
+* value[x] from ICDO3Morphologie (required)
 
-Instance: example-tumor-histologie-topographie
-InstanceOf: sd-tumor-histologie-topographie
-Usage: #example
-Title: "Example Histologie und Topographie"
-Description: "Example Tumor Histologie und Topographie Observation."
+Instance: TumorHistologieMorphologieExample
+InstanceOf: TumorHistologieMorphologie
 * status = #final
-* code.coding[loinc] = LNC#59847-4 "Histology and Behavior ICD-O-3 Cancer"
-* code.coding[snomed_hist] = SCT#1145214003 "Histologic feature of proliferative mass (observable entity)"
-* code.coding[snomed_topo] = SCT#371480007 "Anatomic location of neoplasm (observable entity)"
-* subject = Reference(Beispielpatient)
-* effectiveDateTime = "2022-03-07"
-* valueCodeableConcept.coding[morphologieICD-O-3] = ICDO3#8070/33 "schlecht differenziertes Plattenepithelkarzinom"
-* valueCodeableConcept.coding[morphologieSnomed] = SCT#1162767002 "Squamous cell carcinoma (morphologic abnormality)"
-* bodySite.coding[topographieICD-O-3] = ICDO3#C34.1 "Lungenoberlappen"
-* bodySite.coding[topographieSnomed] = SCT#45653009 "Structure of upper lobe of lung (body structure)"
-
-//Instance: TumorHistologieMorphologieExample
-//InstanceOf: TumorHistologieMorphologie
-//* status = #final
-//* bodySite = ICDO3#8691/1
-//* valueCodeableConcept = ICDO3#C30.1
+* bodySite = ICDO3#8691/1
+* valueCodeableConcept = ICDO3#C30.1
 
 
 Profile: SD_UICC_TNM

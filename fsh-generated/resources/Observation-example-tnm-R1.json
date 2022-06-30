@@ -24,14 +24,5 @@
   "subject": {
     "reference": "Patient/Beispielpatient"
   },
-  "effectiveDateTime": "2022-03-07",
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "code": "R1is",
-        "system": "urn:oid:2.16.840.1.113883.15.16",
-        "display": "R1(is)"
-      }
-    ]
-  }
+  "effectiveDateTime": "2022-03-07"
 }

@@ -16,30 +16,12 @@
             "display": "r - Tumor recurrence (tumor staging)"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "r",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "r"
-          }
-        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "p",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "p"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
         }
       ],
       "code": {
@@ -48,15 +30,6 @@
             "code": "21899-0",
             "system": "http://loinc.org",
             "display": "Primary tumor.pathology Cancer"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "T3",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "T3"
           }
         ]
       }
@@ -70,42 +43,15 @@
             "display": "m - Multiple tumors (tumor staging)"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "m",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "(m)"
-          }
-        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "p",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "p"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
         },
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "i+",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "(i+)"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc"
         }
       ],
       "code": {
@@ -116,30 +62,12 @@
             "display": "Regional lymph nodes.pathology [Class] Cancer"
           }
         ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "N0",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "N0"
-          }
-        ]
       }
     },
     {
       "extension": [
         {
-          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "c",
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "display": "c"
-              }
-            ]
-          }
+          "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp"
         }
       ],
       "code": {
@@ -148,15 +76,6 @@
             "code": "21907-1",
             "system": "http://loinc.org",
             "display": "Distant metastases.clinical [Class] Cancer"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "M0",
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "display": "M0"
           }
         ]
       }
@@ -181,15 +100,6 @@
     "reference": "Patient/Beispielpatient"
   },
   "effectiveDateTime": "2022-03-07",
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "code": "IIB",
-        "system": "urn:oid:2.16.840.1.113883.15.16",
-        "display": "Stage IIB"
-      }
-    ]
-  },
   "hasMember": [
     {
       "reference": "Observation/example-tnm-R1"
