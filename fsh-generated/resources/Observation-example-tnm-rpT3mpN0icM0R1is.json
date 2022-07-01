@@ -21,7 +21,7 @@
         "coding": [
           {
             "code": "r",
-            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "system": "https://www.uicc.org/resources/tnm",
             "display": "r"
           }
         ]
@@ -35,7 +35,7 @@
             "coding": [
               {
                 "code": "p",
-                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "system": "https://www.uicc.org/resources/tnm",
                 "display": "p"
               }
             ]
@@ -55,7 +55,7 @@
         "coding": [
           {
             "code": "T3",
-            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "system": "https://www.uicc.org/resources/tnm",
             "display": "T3"
           }
         ]
@@ -75,7 +75,7 @@
         "coding": [
           {
             "code": "m",
-            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "system": "https://www.uicc.org/resources/tnm",
             "display": "(m)"
           }
         ]
@@ -89,7 +89,7 @@
             "coding": [
               {
                 "code": "p",
-                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "system": "https://www.uicc.org/resources/tnm",
                 "display": "p"
               }
             ]
@@ -101,7 +101,7 @@
             "coding": [
               {
                 "code": "i+",
-                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "system": "https://www.uicc.org/resources/tnm",
                 "display": "(i+)"
               }
             ]
@@ -121,7 +121,7 @@
         "coding": [
           {
             "code": "N0",
-            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "system": "https://www.uicc.org/resources/tnm",
             "display": "N0"
           }
         ]
@@ -135,7 +135,7 @@
             "coding": [
               {
                 "code": "c",
-                "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+                "system": "https://www.uicc.org/resources/tnm",
                 "display": "c"
               }
             ]
@@ -155,7 +155,7 @@
         "coding": [
           {
             "code": "M0",
-            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "system": "https://www.uicc.org/resources/tnm",
             "display": "M0"
           }
         ]
@@ -185,7 +185,7 @@
     "coding": [
       {
         "code": "IIB",
-        "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+        "system": "https://www.uicc.org/resources/tnm",
         "display": "Stage IIB"
       }
     ]

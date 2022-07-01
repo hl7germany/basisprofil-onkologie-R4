@@ -203,7 +203,7 @@
           "coding": [
             {
               "code": "y",
-              "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+              "system": "https://www.uicc.org/resources/tnm",
               "display": "y"
             }
           ]
@@ -243,7 +243,7 @@
           "coding": [
             {
               "code": "r",
-              "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+              "system": "https://www.uicc.org/resources/tnm",
               "display": "r"
             }
           ]
@@ -283,7 +283,7 @@
           "coding": [
             {
               "code": "a",
-              "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+              "system": "https://www.uicc.org/resources/tnm",
               "display": "a"
             }
           ]
@@ -297,20 +297,6 @@
         "definition": "Ausbreitung des Primärtumors",
         "min": 0,
         "max": "1"
-      },
-      {
-        "id": "Observation.component:T-Code.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.component:T-Code.extension:cpPraefix",
@@ -395,20 +381,6 @@
         "max": "1"
       },
       {
-        "id": "Observation.component:N-Code.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Observation.component:N-Code.extension:cpPraefix",
         "path": "Observation.component.extension",
         "sliceName": "cpPraefix",
@@ -488,20 +460,6 @@
         "definition": "Die M-Kategorie beschreibt das Fehlen oder Vorhandensein von Fernmetastasen.",
         "min": 0,
         "max": "1"
-      },
-      {
-        "id": "Observation.component:M-Code.extension",
-        "path": "Observation.component.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Observation.component:M-Code.extension:cpPraefix",

@@ -29,7 +29,7 @@
     "coding": [
       {
         "code": "R1is",
-        "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+        "system": "https://www.uicc.org/resources/tnm",
         "display": "R1(is)"
       }
     ]

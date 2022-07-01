@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+        "system": "https://www.uicc.org/resources/tnm",
         "concept": [
           {
             "code": "okk",

@@ -29,7 +29,7 @@
     "coding": [
       {
         "code": "0",
-        "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+        "system": "https://www.uicc.org/resources/tnm",
         "display": "Stage 0"
       }
     ]
@@ -49,7 +49,7 @@
         "coding": [
           {
             "code": "Tis",
-            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "system": "https://www.uicc.org/resources/tnm",
             "display": "Tis"
           }
         ]
@@ -69,7 +69,7 @@
         "coding": [
           {
             "code": "N0",
-            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "system": "https://www.uicc.org/resources/tnm",
             "display": "N0"
           }
         ]
@@ -89,7 +89,7 @@
         "coding": [
           {
             "code": "M0",
-            "system": "http://fhir.de/CodeSystem/PlaceHolderUICC",
+            "system": "https://www.uicc.org/resources/tnm",
             "display": "M0"
           }
         ]
