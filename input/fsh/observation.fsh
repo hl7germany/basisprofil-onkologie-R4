@@ -502,7 +502,7 @@ Description: "Example Karnofsky performance status Observation."
 // Histologic Tumor Grade
 Profile: SD_Histopathologisches_Grading_WHO
 Parent: Observation
-Id: sd-histopathologisches-grading-who
+Id: histopathologisches-grading-who
 Title: "Observation-Profil Histopathologisches Tumor Grading WHO"
 Description: "Observation-Profil für die Beschreibung des Tumor Gradings nach dem vierstufigen Schema basierend auf WHO und UICC."
 * category ^slicing.discriminator.type = #pattern
@@ -536,7 +536,7 @@ Description: "Observation-Profil für die Beschreibung des Tumor Gradings nach d
 * valueCodeableConcept.coding[histologicGradeSnomed].code 1..
 
 Instance: example-histologic-grade
-InstanceOf: sd-histopathologisches-grading-who
+InstanceOf: SD_Histopathologisches_Grading_WHO
 Usage: #example
 Title: "Example Histologisches Tumor Grading"
 Description: "Example Tumor Grading nach vierstufigem Schema."

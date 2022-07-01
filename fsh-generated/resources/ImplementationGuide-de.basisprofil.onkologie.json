@@ -75,7 +75,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/sd-histopathologisches-grading-who"
+          "reference": "StructureDefinition/histopathologisches-grading-who"
         },
         "name": "Observation-Profil Histopathologisches Tumor Grading WHO",
         "description": "Observation-Profil für die Beschreibung des Tumor Gradings nach dem vierstufigen Schema basierend auf WHO und UICC.",
@@ -589,7 +589,7 @@
         },
         "name": "Example Histologisches Tumor Grading",
         "description": "Example Tumor Grading nach vierstufigem Schema.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/sd-histopathologisches-grading-who"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/histopathologisches-grading-who"
       },
       {
         "reference": {
