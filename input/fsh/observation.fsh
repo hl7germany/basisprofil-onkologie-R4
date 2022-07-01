@@ -19,11 +19,11 @@ Parent: Observation
 Id: uicc-tnm
 Title: "Observation-Profil für UICC-TNM"
 Description: "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren."
-* code MS
+* code
   * coding ^slicing.discriminator.type = #pattern
   * coding ^slicing.discriminator.path = "$this"
   * coding ^slicing.rules = #open
-  * coding contains snomed 0..1 MS and loinc 1..1 MS
+  * coding contains snomed 0..1 and loinc 1..1
   * coding[snomed] = SCT#258235000 //war vorher 260879005; SCT Achse (tumor staging) passt aber besser als (attribute)
   * coding[loinc] from VS_TNM_Klassifikation_Typ_LOINC (required)
 * subject 1..1
@@ -529,7 +529,7 @@ Description: "Observation-Profil für die Beschreibung des Tumor Gradings nach d
 * valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
 * valueCodeableConcept.coding ^slicing.rules = #open
 * valueCodeableConcept.coding contains
-    histologicGradeSnomed 1..1 MS
+    histologicGradeSnomed 1..1
 * valueCodeableConcept.coding[histologicGradeSnomed] from VS_Histopathologisches_Grading_SNOMED (required)
 * valueCodeableConcept.coding[histologicGradeSnomed] ^patternCoding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[histologicGradeSnomed].system 1..

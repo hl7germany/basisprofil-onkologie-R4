@@ -203,7 +203,6 @@
         "patternCoding": {
           "system": "http://snomed.info/sct"
         },
-        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "http://fhir.de/onkologie/ValueSet/histopathological-grade-snomed"
