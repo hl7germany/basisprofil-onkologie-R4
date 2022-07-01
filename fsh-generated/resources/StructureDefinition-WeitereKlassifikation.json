@@ -52,29 +52,14 @@
   "kind": "resource",
   "abstract": false,
   "type": "Condition",
-  "baseDefinition": "https://gematik.de/fhir/ISiK/v2/StructureDefinition/ISiKDiagnose",
+  "baseDefinition": "http://fhir.de/onkologie/StructureDefinition/KrebsDiagnose",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Condition.extension:Fall",
-        "path": "Condition.extension",
-        "sliceName": "Fall",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Condition.clinicalStatus",
-        "path": "Condition.clinicalStatus",
-        "min": 1
+        "id": "Condition.note",
+        "path": "Condition.note",
+        "mustSupport": true
       }
     ]
   }

@@ -5,7 +5,6 @@
     "4.0.1"
   ],
   "dependencies": {
-    "de.basisprofil.r4": "1.2.0-alpha1",
-    "de.gematik.isik-basismodul": "1.0.2"
+    "de.basisprofil.r4": "1.4.0"
   }
 }

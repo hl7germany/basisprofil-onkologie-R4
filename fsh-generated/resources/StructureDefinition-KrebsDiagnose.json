@@ -143,11 +143,6 @@
         ]
       },
       {
-        "id": "Condition.recordedDate",
-        "path": "Condition.recordedDate",
-        "mustSupport": true
-      },
-      {
         "id": "Condition.stage.assessment",
         "path": "Condition.stage.assessment",
         "type": [
@@ -158,11 +153,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Condition.note",
-        "path": "Condition.note",
-        "mustSupport": true
       }
     ]
   }

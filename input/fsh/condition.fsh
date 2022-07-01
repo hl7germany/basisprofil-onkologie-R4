@@ -12,9 +12,9 @@ Title:          "Krebsdiagnose"
 * code.coding only CodingICD10GM
 * code.extension contains DiagnoseSicherheit named DiagnoseSicherheit 0..1 MS and Seitenlokalisation named Seitenlokalisation 0..1 MS
 * subject only Reference(Patient or Group)
-* note MS
+* note
 * stage.assessment only Reference(UICC_TNM)
-* recordedDate MS
+* recordedDate
 
 Instance: KrebsDiagnosePankreas
 InstanceOf: KrebsDiagnose
@@ -35,9 +35,8 @@ Description: "Ein Beispiel für eine fruehere Tumorerkrankung"
 * recordedDate = "2020-03-11T09:40:27+01:00"
 
 Profile:        WeitereKlassifikation
-Parent:         IsikDiagnose
+Parent:         KrebsDiagnose
 Title:          "Weitere Klassifikation"
-* extension contains WorkFlowEpisodeOfCare named Fall 0..1
 * clinicalStatus 1..1
 * code 1..1
 * subject 1..1
