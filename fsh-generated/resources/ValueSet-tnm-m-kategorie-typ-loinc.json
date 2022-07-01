@@ -5,7 +5,7 @@
   "id": "tnm-m-kategorie-typ-loinc",
   "title": "ValueSet TNM M-Kategorie Typ LOINC",
   "description": "Das ValueSet enthält Codes zur Differenzierung der TNM Fernmetastasen (M) Kategorie als entweder klinisch (cM) oder pathologisch (pM).",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "url": "http://fhir.de/onkologie/ValueSet/tnm-m-kategorie-typ-loinc",
   "compose": {
     "include": [

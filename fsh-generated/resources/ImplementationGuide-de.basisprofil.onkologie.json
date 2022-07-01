@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "de.basisprofil.onkologie",
   "url": "http://fhir.de/onkologie/ImplementationGuide/de.basisprofil.onkologie",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "BasisprofilOnkologieR4",
   "status": "active",
   "packageId": "de.basisprofil.onkologie",

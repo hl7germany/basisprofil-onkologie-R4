@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Histology",
   "url": "http://fhir.de/onkologie/StructureDefinition/Histology",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "Histology",
   "title": "Histologie ICD-O-3",
   "status": "active",

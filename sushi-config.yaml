@@ -6,7 +6,7 @@ id: de.basisprofil.onkologie
 canonical: http://fhir.de/onkologie
 name: BasisprofilOnkologieR4
 status: active
-version: 0.1.0
+version: 1.0.0-ballot
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build

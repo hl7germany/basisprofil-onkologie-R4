@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://fhir.de/onkologie/StructureDefinition/uicc-r-klassifikation",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "SD_UICC_TNM_R_Klassifikation",
   "title": "Observation-Profil UICC TNM Residualtumor- (R-)Klassifikation",
   "status": "active",

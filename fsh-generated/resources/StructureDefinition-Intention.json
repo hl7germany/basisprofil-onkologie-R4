@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Intention",
   "url": "http://fhir.de/onkologie/StructureDefinition/Intention",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "Intention",
   "title": "Therapie-Intention",
   "status": "active",

@@ -5,7 +5,7 @@
   "id": "tnm-klassifikation-typ-loinc",
   "title": "ValueSet TNM Klassification Typ LOINC",
   "description": "Das ValueSet enthält LOINC Codes zur Differenzierung der TNM-Klassifikation als klinisch (cTNM) oder pathologisch (pTNM).",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "url": "http://fhir.de/onkologie/ValueSet/tnm-klassifikation-typ-loinc",
   "compose": {
     "include": [

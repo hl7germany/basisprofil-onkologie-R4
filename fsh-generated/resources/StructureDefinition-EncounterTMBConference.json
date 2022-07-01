@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://fhir.de/onkologie/StructureDefinition/EncounterTMBConference",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "EncounterTMBConference",
   "title": "Tumor Board Conference",
   "status": "active",

@@ -5,7 +5,7 @@
   "id": "icd-10-gm-vs",
   "title": "ICD-10-GM",
   "description": "Dieses ValueSet enthält alle ICD 10 Codes der deutschen Modifikation",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "url": "http://fhir.de/onkologie/ValueSet/icd-10-gm-vs",
   "compose": {
     "include": [

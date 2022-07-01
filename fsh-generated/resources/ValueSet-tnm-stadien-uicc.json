@@ -5,7 +5,7 @@
   "id": "tnm-stadien-uicc",
   "title": "ValueSet TNM Stadien UICC",
   "description": "The ValueSet enthält Codes für die TNM-Stadien zur prognostischen Gruppeneinteilung von Patienten.",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "url": "http://fhir.de/onkologie/ValueSet/tnm-stadien-uicc",
   "compose": {
     "include": [

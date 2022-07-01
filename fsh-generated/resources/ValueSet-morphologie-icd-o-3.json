@@ -5,7 +5,7 @@
   "id": "morphologie-icd-o-3",
   "title": "ValueSet Morphologie ICD-O-3",
   "description": "The ValueSet enthält die Morphologie (Histologie) Codes aus der ICD-O-3.",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "url": "http://fhir.de/onkologie/ValueSet/morphologie-icd-o-3",
   "compose": {
     "include": [

@@ -5,7 +5,7 @@
   "name": "OpKomplikationen",
   "id": "OpKomplikationen",
   "description": "Beurteiling des lokalen Residualstatus nach Abschluss der Operation",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "url": "http://fhir.de/onkologie/CodeSystem/OpKomplikationen",
   "concept": [
     {

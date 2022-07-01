@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "uicc-tnm-suffix-itc",
   "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-suffix-itc",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "SD_UICC_TNM_Suffix_ITC",
   "title": "Extension UICC TNM Suffix ITC",
   "status": "active",

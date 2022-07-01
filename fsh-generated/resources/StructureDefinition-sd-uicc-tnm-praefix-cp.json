@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "sd-uicc-tnm-praefix-cp",
   "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm-praefix-cp",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "SD_UICC_TNM_Praefix_CP",
   "title": "Extension UICC TNM Präfix CP",
   "status": "active",

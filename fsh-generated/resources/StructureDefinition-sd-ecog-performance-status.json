@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://fhir.de/onkologie/StructureDefinition/ecog-performance-status",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "SD_ECOG_Performance_Status",
   "title": "Observation-Profil ECOG Performance Status",
   "status": "active",

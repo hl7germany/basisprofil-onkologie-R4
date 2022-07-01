@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://fhir.de/onkologie/StructureDefinition/histopathologisches-grading-who",
-  "version": "0.1.0",
+  "version": "1.0.0-ballot",
   "name": "SD_Histopathologisches_Grading_WHO",
   "title": "Observation-Profil Histopathologisches Tumor Grading WHO",
   "status": "active",
