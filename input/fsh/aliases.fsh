@@ -34,7 +34,7 @@ Alias:   v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: WorkFlowEpisodeOfCare = http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare
 
 //TNM related
-Alias: UICC = http://fhir.de/CodeSystem/PlaceHolderUICC
+Alias: UICC = https://www.uicc.org/resources/tnm
 //todo: set correct URI for TNMPRAEFIXL & TNMPRAEFIXV
 //Alias: TNMPRAEFIXL = urn:oid:1.2.276.0.76.3.1.131.1.5.1
 //Alias: TNMPRAEFIXV = urn:oid:1.2.276.0.76.3.1.131.1.5.1
