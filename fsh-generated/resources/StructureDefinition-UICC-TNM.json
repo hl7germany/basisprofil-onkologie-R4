@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "UICC-TNM",
+  "id": "uicc-tnm",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM",
+  "url": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm",
   "version": "0.1.0",
   "name": "UICC_TNM",
   "title": "Observation-Profil für UICC-TNM",
@@ -151,7 +151,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
+              "http://fhir.de/onkologie/StructureDefinition/uicc-r-klassifikation"
             ]
           }
         ]

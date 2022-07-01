@@ -97,7 +97,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/sd-UICC-r-klassifikation"
+          "reference": "StructureDefinition/uicc-r-klassifikation"
         },
         "name": "Observation-Profil UICC TNM Residualtumor- (R-)Klassifikation",
         "description": "Observation-Profil für die Residualtumor- (R-)Klassifikation.",
@@ -134,7 +134,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/UICC-TNM"
+          "reference": "StructureDefinition/uicc-tnm"
         },
         "name": "Observation-Profil für UICC-TNM",
         "description": "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren.",
@@ -603,7 +603,7 @@
         },
         "name": "Example Histologisches Tumor Grading",
         "description": "Example Tumor Grading nach vierstufigem Schema.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/histopathological-grading-who"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/sd-histopathologisches-grading-who"
       },
       {
         "reference": {
@@ -619,7 +619,7 @@
         },
         "name": "Example TNM R0",
         "description": "Example TNM R0.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-r-klassifikation"
       },
       {
         "reference": {
@@ -627,7 +627,7 @@
         },
         "name": "Example TNM R1",
         "description": "Example TNM R1.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-r-klassifikation"
       },
       {
         "reference": {
@@ -635,7 +635,7 @@
         },
         "name": "Example TNM Tis N0 M0",
         "description": "Example TNM Tis N0 M0.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
       },
       {
         "reference": {
@@ -643,7 +643,7 @@
         },
         "name": "Example TNM cT3 pN0 (mol-)(sn) cM1",
         "description": "Example TNM cT3 pN0 (mol-)(sn) cM1.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
       },
       {
         "reference": {
@@ -651,7 +651,7 @@
         },
         "name": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)",
         "description": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is).",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
       },
       {
         "reference": {
@@ -659,7 +659,7 @@
         },
         "name": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1",
         "description": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
       },
       {
         "reference": {
@@ -667,7 +667,7 @@
         },
         "name": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0",
         "description": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
       }
     ],
     "page": {

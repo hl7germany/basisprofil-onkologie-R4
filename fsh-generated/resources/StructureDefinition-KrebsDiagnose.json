@@ -154,7 +154,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
+              "http://fhir.de/onkologie/StructureDefinition/uicc-tnm"
             ]
           }
         ]

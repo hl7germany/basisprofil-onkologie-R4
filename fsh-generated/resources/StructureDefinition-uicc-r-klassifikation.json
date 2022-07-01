@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "sd-UICC-r-klassifikation",
+  "id": "uicc-r-klassifikation",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation",
+  "url": "http://fhir.de/onkologie/StructureDefinition/uicc-r-klassifikation",
   "version": "0.1.0",
   "name": "SD_UICC_TNM_R_Klassifikation",
   "title": "Observation-Profil UICC TNM Residualtumor- (R-)Klassifikation",

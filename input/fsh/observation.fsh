@@ -16,7 +16,7 @@ InstanceOf: TumorHistologieMorphologie
 
 Profile: UICC_TNM
 Parent: Observation
-Id: UICC-TNM
+Id: uicc-tnm
 Title: "Observation-Profil für UICC-TNM"
 Description: "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren."
 * code MS
@@ -151,10 +151,9 @@ Description: "Observation-Profil für die UICC TNM - Klassifikation Maligner Tum
 // UICC TNM Residualtumor- R-Klassifikation Profil
 Profile: SD_UICC_TNM_R_Klassifikation
 Parent: Observation
-Id: sd-UICC-r-klassifikation
+Id: uicc-r-klassifikation
 Title: "Observation-Profil UICC TNM Residualtumor- (R-)Klassifikation"
 Description: "Observation-Profil für die Residualtumor- (R-)Klassifikation."
-* ^url = "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -270,7 +269,7 @@ Description: "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0."
 * component[anzahlLymphknotenUntersucht].valueQuantity = 9 UCUM#1
 
 Instance: example-tnm-R0
-InstanceOf: sd-UICC-r-klassifikation
+InstanceOf: SD_UICC_TNM_R_Klassifikation
 Usage: #example
 Title: "Example TNM R0"
 Description: "Example TNM R0."
@@ -309,7 +308,7 @@ Description: "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)."
 * component[M-Code].valueCodeableConcept = UICC#M0 "M0"
 
 Instance: example-tnm-R1
-InstanceOf: sd-UICC-r-klassifikation
+InstanceOf: SD_UICC_TNM_R_Klassifikation
 Usage: #example
 Title: "Example TNM R1"
 Description: "Example TNM R1."
@@ -506,7 +505,6 @@ Parent: Observation
 Id: sd-histopathologisches-grading-who
 Title: "Observation-Profil Histopathologisches Tumor Grading WHO"
 Description: "Observation-Profil für die Beschreibung des Tumor Gradings nach dem vierstufigen Schema basierend auf WHO und UICC."
-* ^url = "http://fhir.de/onkologie/StructureDefinition/histopathological-grading-who"
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open

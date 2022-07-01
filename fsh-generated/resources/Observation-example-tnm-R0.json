@@ -3,7 +3,7 @@
   "id": "example-tnm-R0",
   "meta": {
     "profile": [
-      "http://fhir.de/onkologie/StructureDefinition/UICC-r-klassifikation"
+      "http://fhir.de/onkologie/StructureDefinition/uicc-r-klassifikation"
     ]
   },
   "code": {

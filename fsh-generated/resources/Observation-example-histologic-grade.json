@@ -3,7 +3,7 @@
   "id": "example-histologic-grade",
   "meta": {
     "profile": [
-      "http://fhir.de/onkologie/StructureDefinition/histopathological-grading-who"
+      "http://fhir.de/onkologie/StructureDefinition/sd-histopathologisches-grading-who"
     ]
   },
   "category": [

@@ -11,7 +11,7 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://fhir.de/onkologie/StructureDefinition/histopathological-grading-who",
+  "url": "http://fhir.de/onkologie/StructureDefinition/sd-histopathologisches-grading-who",
   "version": "0.1.0",
   "name": "SD_Histopathologisches_Grading_WHO",
   "title": "Observation-Profil Histopathologisches Tumor Grading WHO",
