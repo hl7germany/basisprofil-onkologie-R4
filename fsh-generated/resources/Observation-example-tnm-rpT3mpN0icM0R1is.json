@@ -3,7 +3,7 @@
   "id": "example-tnm-rpT3mpN0icM0R1is",
   "meta": {
     "profile": [
-      "http://fhir.de/onkologie/StructureDefinition/UICC"
+      "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
     ]
   },
   "component": [

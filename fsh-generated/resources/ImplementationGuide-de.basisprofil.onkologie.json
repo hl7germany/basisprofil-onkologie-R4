@@ -134,9 +134,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/UICC"
+          "reference": "StructureDefinition/UICC-TNM"
         },
-        "name": "Observation-Profil für UICC",
+        "name": "Observation-Profil für UICC-TNM",
         "description": "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren.",
         "exampleBoolean": false
       },
@@ -635,7 +635,7 @@
         },
         "name": "Example TNM Tis N0 M0",
         "description": "Example TNM Tis N0 M0.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
       },
       {
         "reference": {
@@ -643,7 +643,7 @@
         },
         "name": "Example TNM cT3 pN0 (mol-)(sn) cM1",
         "description": "Example TNM cT3 pN0 (mol-)(sn) cM1.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
       },
       {
         "reference": {
@@ -651,7 +651,7 @@
         },
         "name": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)",
         "description": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is).",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
       },
       {
         "reference": {
@@ -659,7 +659,7 @@
         },
         "name": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1",
         "description": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
       },
       {
         "reference": {
@@ -667,7 +667,7 @@
         },
         "name": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0",
         "description": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0.",
-        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC"
+        "exampleCanonical": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM"
       }
     ],
     "page": {

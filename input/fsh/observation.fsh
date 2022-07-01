@@ -16,8 +16,8 @@ InstanceOf: TumorHistologieMorphologie
 
 Profile: UICC_TNM
 Parent: Observation
-Id: UICC
-Title: "Observation-Profil für UICC"
+Id: UICC-TNM
+Title: "Observation-Profil für UICC-TNM"
 Description: "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren."
 * code MS
   * coding ^slicing.discriminator.type = #pattern
@@ -71,7 +71,6 @@ Description: "Observation-Profil für die UICC TNM - Klassifikation Maligner Tum
 * component[a-Symbol].code = SCT#277646006 "a - At autopsy (tumor staging)" //LOINC??
 * component[a-Symbol].value[x] only CodeableConcept
 * component[a-Symbol].value[x] = UICC#a "a"
-
 * component[T-Code] ^short = "T - Primärtumor"
 * component[T-Code] ^definition = "Ausbreitung des Primärtumors"
 * component[T-Code].extension contains SD_UICC_TNM_Praefix_CP named cpPraefix 0..1

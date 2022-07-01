@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "UICC",
+  "id": "UICC-TNM",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -11,10 +11,10 @@
       "valueCode": "patient"
     }
   ],
-  "url": "http://fhir.de/onkologie/StructureDefinition/UICC",
+  "url": "http://fhir.de/onkologie/StructureDefinition/UICC-TNM",
   "version": "0.1.0",
   "name": "UICC_TNM",
-  "title": "Observation-Profil für UICC",
+  "title": "Observation-Profil für UICC-TNM",
   "status": "active",
   "description": "Observation-Profil für die UICC TNM - Klassifikation Maligner Tumoren.",
   "fhirVersion": "4.0.1",
@@ -299,6 +299,20 @@
         "max": "1"
       },
       {
+        "id": "Observation.component:T-Code.extension",
+        "path": "Observation.component.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Observation.component:T-Code.extension:cpPraefix",
         "path": "Observation.component.extension",
         "sliceName": "cpPraefix",
@@ -381,6 +395,20 @@
         "max": "1"
       },
       {
+        "id": "Observation.component:N-Code.extension",
+        "path": "Observation.component.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Observation.component:N-Code.extension:cpPraefix",
         "path": "Observation.component.extension",
         "sliceName": "cpPraefix",
@@ -460,6 +488,20 @@
         "definition": "Die M-Kategorie beschreibt das Fehlen oder Vorhandensein von Fernmetastasen.",
         "min": 0,
         "max": "1"
+      },
+      {
+        "id": "Observation.component:M-Code.extension",
+        "path": "Observation.component.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "Observation.component:M-Code.extension:cpPraefix",
