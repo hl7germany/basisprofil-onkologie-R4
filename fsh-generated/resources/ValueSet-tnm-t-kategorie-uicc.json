@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_T_Kategorie_UICC",
-  "id": "vs-tnm-t-kategorie-uicc",
+  "id": "tnm-t-kategorie-uicc",
   "title": "ValueSet TNM T-Kategorie UICC",
   "description": "Das ValueSet enthält die TNM T-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
   "version": "0.1.0",

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_M_Kategorie_Typ_LOINC",
-  "id": "vs-tnm-m-kategorie-typ-loinc",
+  "id": "tnm-m-kategorie-typ-loinc",
   "title": "ValueSet TNM M-Kategorie Typ LOINC",
   "description": "Das ValueSet enthält Codes zur Differenzierung der TNM Fernmetastasen (M) Kategorie als entweder klinisch (cM) oder pathologisch (pM).",
   "version": "0.1.0",

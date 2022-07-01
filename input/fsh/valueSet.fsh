@@ -1,18 +1,16 @@
 //TNM Typ c/p
 ValueSet: VS_TNM_Klassifikation_Typ_LOINC
-Id: vs-tnm-klassifikation-typ-loinc
+Id: tnm-klassifikation-typ-loinc
 Title: "ValueSet TNM Klassification Typ LOINC"
 Description: "Das ValueSet enthält LOINC Codes zur Differenzierung der TNM-Klassifikation als klinisch (cTNM) oder pathologisch (pTNM)."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-klassifikation-typ-loinc"
 * LNC#21908-9 "Stage group.clinical Cancer"
 * LNC#21902-2 "Stage group.pathology Cancer"
 
 // TNM Stadien Gruppen
 ValueSet: VS_TNM_Stadien_UICC
-Id: vs-tnm-stadien-uicc
+Id: tnm-stadien-uicc
 Title: "ValueSet TNM Stadien UICC"
 Description: "The ValueSet enthält Codes für die TNM-Stadien zur prognostischen Gruppeneinteilung von Patienten."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-stadien-uicc"
 * UICC#okk	"Stadium X"
 * UICC#0	    "Stadium 0"
 * UICC#0a	"Stadium 0a"
@@ -47,20 +45,18 @@ Description: "The ValueSet enthält Codes für die TNM-Stadien zur prognostische
 
 // TNM c, p Präfix Extension
 ValueSet: VS_TNM_Praefix_CP_UICC
-Id: vs-tnm-praefix-cp-uicc
+Id: tnm-praefix-cp-uicc
 Title: "ValueSet TNM Praefix CP UICC"
 Description: "Das ValueSet enthält die c und p Präfixe für die T-, N- oder M-Kategorien aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-praefix-cpu-uicc"
 * UICC#c "c"
 * UICC#p "p"
 //* TNM#u "u"
 
 // TNM T Kategorie LOINC
 ValueSet: VS_TNM_T_Kategorie_Typ_LOINC
-Id: vs-tnm-t-kategorie-typ-loinc
+Id: tnm-t-kategorie-typ-loinc
 Title: "ValueSet TNM T-Kategorie Typ LOINC"
 Description: "Das ValueSet enthält Codes zur Differenzierung der TNM Primärtumor (T) Kategorie als entweder klinisch (cT) oder pathologisch (pT)."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-t-kategorie-typ-loinc"
 * LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
 * LNC#21899-0 "Primary tumor.pathology Cancer"
 //* LNC#21911-3 "Primary tumor.other [Class] Cancer"
@@ -77,28 +73,25 @@ Title: "Topologie Codes des ICD-O-3 CodeSystems."
 
 // TNM SN Suffix
 ValueSet: VS_TNM_Suffix_SN_UICC
-Id: vs-tnm-suffix-sn-uicc
+Id: tnm-suffix-sn-uicc
 Title: "ValueSet TNM Suffix SN UICC"
 Description: "Das ValueSet enthält das Schildwächterlymphknoten (Sentinel Lymph Node) Suffix für die N-Kategorie aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-suffix-itc-sn-uicc"
 * UICC#sn "(sn)"
 
 // TNM N Kategorie LOINC
 ValueSet: VS_TNM_N_Kategorie_Type_LOINC
-Id: vs-tnm-n-kategorie-typ-loinc
+Id: tnm-n-kategorie-typ-loinc
 Title: "ValueSet TNM N-Kategorie Typ LOINC"
 Description: "Das ValueSet enthält Codes zur Differenzierung der TNM regionäre Lymphknoten (N) Kategorie als entweder klinisch (cN) oder pathologisch (pN)."
-* ^url = "http://fhir.de/onkologie/ValueSet/ValueSet/tnm-n-kategorie-typ-loinc"
 * LNC#21906-3 "Regional lymph nodes.clinical [Class] Cancer"
 * LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
 //* LNC#21912-1 "Regional lymph nodes.other [Class] Cancer"
 
 // TNM N Kategorie Werte
 ValueSet: VS_TNM_N_Kategorie_UICC
-Id: vs-tnm-n-kategorie-uicc
+Id: tnm-n-kategorie-uicc
 Title: "ValueSet TNM N Kategorie UICC"
 Description: "Das ValueSet enthält die TNM N-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-n-kategorie-uicc"
 * UICC#NX	"Nx"
 * UICC#N0	"N0"
 * UICC#N1	"N1"
@@ -117,20 +110,18 @@ Description: "Das ValueSet enthält die TNM N-Kategorie Codes aus der UICC TNM -
 
 // TNM M Kategorie LOINC
 ValueSet: VS_TNM_M_Kategorie_Typ_LOINC
-Id: vs-tnm-m-kategorie-typ-loinc
+Id: tnm-m-kategorie-typ-loinc
 Title: "ValueSet TNM M-Kategorie Typ LOINC"
 Description: "Das ValueSet enthält Codes zur Differenzierung der TNM Fernmetastasen (M) Kategorie als entweder klinisch (cM) oder pathologisch (pM)."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-m-kategorie-typ-loinc"
 * LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 * LNC#21901-4 "Distant metastases.pathology [Class] Cancer"
 //* LNC#21913-9 "Distant metastases.other [Class] Cancer"
 
 // TNM M Kategorie Werte
 ValueSet: VS_TNM_M_Kategorie_UICC
-Id: vs-tnm-m-kategorie-uicc
+Id: tnm-m-kategorie-uicc
 Title: "ValueSet TNM M Kategorie UICC"
 Description: "Das ValueSet enthält die TNM M-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-m-kategorie-uicc"
 * UICC#M0 "M0"
 * UICC#M1 "M1"
 * UICC#M1a "M1a"
@@ -142,20 +133,18 @@ Description: "Das ValueSet enthält die TNM M-Kategorie Codes aus der UICC TNM -
 
 // TNM L-Deskriptor Werte
 ValueSet: VS_TNM_L_Lymphgefaessinvasion_UICC
-Id: vs-tnm-l-lymphgefaessinvasion-uicc
+Id: tnm-l-lymphgefaessinvasion-uicc
 Title: "ValueSet TNM L-Deskriptor Lymphgefäßinvasion UICC"
 Description: "Das ValueSet enthält die TNM Codes für die Beurteilung der Lymphgefäßinvasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-l-lymphgefaessinvasion-uicc"
 * UICC#L0 "L0"
 * UICC#L1 "L1"
 * UICC#LX "LX"
 
 // TNM V-Deskriptor Werte
 ValueSet: VS_TNM_V_Veneninvasion_UICC
-Id: vs-tnm-v-veneninvasion-uicc
+Id: tnm-v-veneninvasion-uicc
 Title: "ValueSet TNM V-Deskriptor Veneninvasion UICC"
 Description: "Das ValueSet enthält die TNM Codes für die Beurteilung der Veneninvasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-v-veneninvasion-uicc"
 * UICC#V0 "V0"
 * UICC#V1 "V1"
 * UICC#V2 "V2"
@@ -163,20 +152,18 @@ Description: "Das ValueSet enthält die TNM Codes für die Beurteilung der Venen
 
 // TNM Pn-Deskriptor Werte
 ValueSet: VS_TNM_Pn_Perineurale_Invasion_UICC
-Id: vs-tnm-pn-perineurale-invasion-uicc
+Id: tnm-pn-perineurale-invasion-uicc
 Title: "ValueSet TNM Pn-Deskriptor Perineurale Invasion UICC"
 Description: "Das ValueSet enthält die TNM Codes für den Grad der perineuralen Invasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-pn-perineurale-invasion-uicc"
 * UICC#Pn0 "Pn0"
 * UICC#Pn1 "Pn1"
 * UICC#PnX "PnX"
 
 // TNM S-Symbol Werte
 ValueSet: VS_TNM_S_Serumtumormarker_UICC
-Id: vs-tnm-s-serumtumormarker-uicc
+Id: tnm-s-serumtumormarker-uicc
 Title: "ValueSet TNM S Serumtumormarker UICC"
 Description: "Das ValueSet enthält die TNM Codes für Serumtumormarker aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-s-serumtumormarker-uicc"
 * UICC#S0 "S0"
 * UICC#S1 "S1"
 * UICC#S2 "S2"
@@ -185,10 +172,9 @@ Description: "Das ValueSet enthält die TNM Codes für Serumtumormarker aus der 
 
 // TNM Residualtumor- R-Klassifikation
 ValueSet: VS_TNM_R_Klassifikation_UICC
-Id: vs-tnm-r-klassifikation-uicc
+Id: tnm-r-klassifikation-uicc
 Title: "ValueSet TNM Residualtumor- (R-)Klassifikation UICC"
 Description: "Das ValueSet enthält Codes für die TNM Residualtumor- (R-)Klassifikation."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-r-classification-uicc"
 * UICC#RX "RX"
 * UICC#R0 "R0"
 * UICC#R1 "R1"
@@ -205,10 +191,9 @@ Description: "Das ValueSet enthält Codes für die TNM Residualtumor- (R-)Klassi
 
 // ECOG
 ValueSet: VS_ECOG_Performance_Status_SNOMED
-Id: vs-ecog-performance-status-snomed
+Id: ecog-performance-status-snomed
 Title: "ValueSet ECOG Performance Status SNOMED"
 Description: "The ValueSet enthält die ECOG Performance Status Codes aus SNOMED CT."
-* ^url = "http://fhir.de/onkologie/ValueSet/ecog-performance-status-snomed"
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
 * include codes from system SCT where concept descendent-of #424122007
 
@@ -219,19 +204,17 @@ Description: "The ValueSet enthält die ECOG Performance Status Codes aus SNOMED
 
 // Morphology ICD-O-3 
 ValueSet: VS_Morphologie_ICD_O_3
-Id: vs-morphologie-icd-o-3
+Id: morphologie-icd-o-3
 Title: "ValueSet Morphologie ICD-O-3"
 Description: "The ValueSet enthält die Morphologie (Histologie) Codes aus der ICD-O-3."
-* ^url = "http://fhir.de/onkologie/ValueSet/morphology-icd-o-3"
 * include codes from system ICDO3 where concept regex "^\\d\\S*$"
 
 // Morphology SNOMED
 ValueSet: VS_Morphologie_SNOMED
-Id: vs-morphologie-snomed
+Id: morphologie-snomed
 Title: "ValueSet Morphologie SNOMED"
 Description: "The ValueSet enthält die Morphologie (Histologie) Codes aus SNOMED CT."
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
-* ^url = "http://fhir.de/onkologie/ValueSet/morphology-snomed"
 * include codes from system SCT where concept descendent-of #400177003
 
 //ValueSet: ICDO3Topologie
@@ -241,27 +224,24 @@ Description: "The ValueSet enthält die Morphologie (Histologie) Codes aus SNOME
 
 // Topography ICD-O-3 
 ValueSet: VS_Topographie_ICD_O_3
-Id: vs-topographie-icd-o-3
+Id: topographie-icd-o-3
 Title: "ValueSet Topographie ICD-O-3"
 Description: "The ValueSet enthält die Topographie Codes aus der ICD-O-3."
-* ^url = "http://fhir.de/onkologie/ValueSet/topography-icd-o-3"
 * include codes from system ICDO3 where concept regex "^C\\S*$"
 
 // Topography SNOMED
 ValueSet: VS_Topographie_SNOMED
-Id: vs-topographie-snomed
+Id: topographie-snomed
 Title: "ValueSet Topographie SNOMED"
 Description: "The ValueSet enthält die Topographie Codes aus SNOMED CT."
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
-* ^url = "http://fhir.de/onkologie/ValueSet/topographie-snomed"
 * include codes from system SCT where concept descendent-of #123037004
 
 // TNM T Kategorie Werte
 ValueSet: VS_TNM_T_Kategorie_UICC
-Id: vs-tnm-t-kategorie-uicc
+Id: tnm-t-kategorie-uicc
 Title: "ValueSet TNM T-Kategorie UICC"
 Description: "Das ValueSet enthält die TNM T-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-t-kategorie-uicc"
 * UICC#TX	"TX"
 * UICC#T0	"T0"
 * UICC#Ta	"Ta"
@@ -307,10 +287,9 @@ Description: "Das ValueSet enthält die TNM T-Kategorie Codes aus der UICC TNM -
 
 // TNM T Kategorie Multiplizität
 ValueSet: VS_TNM_T_Multiplizitaet_UICC
-Id: vs-tnm-t-multiplizitaet-uicc
+Id: tnm-t-multiplizitaet-uicc
 Title: "ValueSet TNM T Multiplizitaet UICC"
 Description: "Das ValueSet enthält die TNM Primärtumor Multiplizität Codes zur Verwendung mit dem m-Symbol aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-t-multiplizitaet-uicc"
 * UICC#m "(m)"
 * UICC#2 "(2)"
 * UICC#3 "(3)"
@@ -324,10 +303,9 @@ Description: "Das ValueSet enthält die TNM Primärtumor Multiplizität Codes zu
 
 // TNM ITC Suffixe
 ValueSet: VS_TNM_Suffix_ITC_UICC
-Id: vs-tnm-suffix-itc-uicc
+Id: tnm-suffix-itc-uicc
 Title: "ValueSet TNM Suffix ITC UICC"
 Description: "Das ValueSet enthält die isolierten Tumorzellen (ITC) Suffixe für die N- und M-Kategorien aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage."
-* ^url = "http://fhir.de/onkologie/ValueSet/tnm-suffix-itc-uicc"
 * UICC#i+ "(i+)"
 * UICC#i- "(i-)"
 * UICC#mol+ "(mol+)"
@@ -423,11 +401,10 @@ Title: "Histologie Grading Codes"
 
 // Tumor Histologic Grade SNOMED 
 ValueSet: VS_Histopathologisches_Grading_SNOMED
-Id: vs-histopathologisches-grading-snomed
+Id: histopathologisches-grading-snomed
 Title: "ValueSet Histopathologisches Grading SNOMED"
 Description: "The ValueSet enthält Codes für das Tumor Grading aus SNOMED CT."
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
-* ^url = "http://fhir.de/onkologie/ValueSet/histopathological-grade-snomed"
 * SCT#12619005 "GX grade (finding)"
 * SCT#313147000 "Tumor grade G0"
 * SCT#54102005 "G1 grade (finding)"

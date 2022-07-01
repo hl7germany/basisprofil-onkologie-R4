@@ -2,11 +2,11 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_N_Kategorie_Type_LOINC",
-  "id": "vs-tnm-n-kategorie-typ-loinc",
+  "id": "tnm-n-kategorie-typ-loinc",
   "title": "ValueSet TNM N-Kategorie Typ LOINC",
   "description": "Das ValueSet enthält Codes zur Differenzierung der TNM regionäre Lymphknoten (N) Kategorie als entweder klinisch (cN) oder pathologisch (pN).",
   "version": "0.1.0",
-  "url": "http://fhir.de/onkologie/ValueSet/ValueSet/tnm-n-kategorie-typ-loinc",
+  "url": "http://fhir.de/onkologie/ValueSet/tnm-n-kategorie-typ-loinc",
   "compose": {
     "include": [
       {

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_S_Serumtumormarker_UICC",
-  "id": "vs-tnm-s-serumtumormarker-uicc",
+  "id": "tnm-s-serumtumormarker-uicc",
   "title": "ValueSet TNM S Serumtumormarker UICC",
   "description": "Das ValueSet enthält die TNM Codes für Serumtumormarker aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
   "version": "0.1.0",

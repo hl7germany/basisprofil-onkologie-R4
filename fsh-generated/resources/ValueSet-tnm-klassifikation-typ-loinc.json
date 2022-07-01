@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_Klassifikation_Typ_LOINC",
-  "id": "vs-tnm-klassifikation-typ-loinc",
+  "id": "tnm-klassifikation-typ-loinc",
   "title": "ValueSet TNM Klassification Typ LOINC",
   "description": "Das ValueSet enthält LOINC Codes zur Differenzierung der TNM-Klassifikation als klinisch (cTNM) oder pathologisch (pTNM).",
   "version": "0.1.0",

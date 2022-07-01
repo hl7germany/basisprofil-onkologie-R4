@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_T_Multiplizitaet_UICC",
-  "id": "vs-tnm-t-multiplizitaet-uicc",
+  "id": "tnm-t-multiplizitaet-uicc",
   "title": "ValueSet TNM T Multiplizitaet UICC",
   "description": "Das ValueSet enthält die TNM Primärtumor Multiplizität Codes zur Verwendung mit dem m-Symbol aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
   "version": "0.1.0",

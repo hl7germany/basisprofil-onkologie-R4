@@ -284,7 +284,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-ecog-performance-status-snomed"
+          "reference": "ValueSet/ecog-performance-status-snomed"
         },
         "name": "ValueSet ECOG Performance Status SNOMED",
         "description": "The ValueSet enthält die ECOG Performance Status Codes aus SNOMED CT.",
@@ -292,7 +292,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-histopathologisches-grading-snomed"
+          "reference": "ValueSet/histopathologisches-grading-snomed"
         },
         "name": "ValueSet Histopathologisches Grading SNOMED",
         "description": "The ValueSet enthält Codes für das Tumor Grading aus SNOMED CT.",
@@ -300,7 +300,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-morphologie-icd-o-3"
+          "reference": "ValueSet/morphologie-icd-o-3"
         },
         "name": "ValueSet Morphologie ICD-O-3",
         "description": "The ValueSet enthält die Morphologie (Histologie) Codes aus der ICD-O-3.",
@@ -308,7 +308,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-morphologie-snomed"
+          "reference": "ValueSet/morphologie-snomed"
         },
         "name": "ValueSet Morphologie SNOMED",
         "description": "The ValueSet enthält die Morphologie (Histologie) Codes aus SNOMED CT.",
@@ -316,7 +316,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-klassifikation-typ-loinc"
+          "reference": "ValueSet/tnm-klassifikation-typ-loinc"
         },
         "name": "ValueSet TNM Klassification Typ LOINC",
         "description": "Das ValueSet enthält LOINC Codes zur Differenzierung der TNM-Klassifikation als klinisch (cTNM) oder pathologisch (pTNM).",
@@ -324,7 +324,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-l-lymphgefaessinvasion-uicc"
+          "reference": "ValueSet/tnm-l-lymphgefaessinvasion-uicc"
         },
         "name": "ValueSet TNM L-Deskriptor Lymphgefäßinvasion UICC",
         "description": "Das ValueSet enthält die TNM Codes für die Beurteilung der Lymphgefäßinvasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -332,7 +332,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-m-kategorie-typ-loinc"
+          "reference": "ValueSet/tnm-m-kategorie-typ-loinc"
         },
         "name": "ValueSet TNM M-Kategorie Typ LOINC",
         "description": "Das ValueSet enthält Codes zur Differenzierung der TNM Fernmetastasen (M) Kategorie als entweder klinisch (cM) oder pathologisch (pM).",
@@ -340,7 +340,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-m-kategorie-uicc"
+          "reference": "ValueSet/tnm-m-kategorie-uicc"
         },
         "name": "ValueSet TNM M Kategorie UICC",
         "description": "Das ValueSet enthält die TNM M-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -348,7 +348,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-n-kategorie-typ-loinc"
+          "reference": "ValueSet/tnm-n-kategorie-typ-loinc"
         },
         "name": "ValueSet TNM N-Kategorie Typ LOINC",
         "description": "Das ValueSet enthält Codes zur Differenzierung der TNM regionäre Lymphknoten (N) Kategorie als entweder klinisch (cN) oder pathologisch (pN).",
@@ -356,7 +356,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-n-kategorie-uicc"
+          "reference": "ValueSet/tnm-n-kategorie-uicc"
         },
         "name": "ValueSet TNM N Kategorie UICC",
         "description": "Das ValueSet enthält die TNM N-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -364,7 +364,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-pn-perineurale-invasion-uicc"
+          "reference": "ValueSet/tnm-pn-perineurale-invasion-uicc"
         },
         "name": "ValueSet TNM Pn-Deskriptor Perineurale Invasion UICC",
         "description": "Das ValueSet enthält die TNM Codes für den Grad der perineuralen Invasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -372,7 +372,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-praefix-cp-uicc"
+          "reference": "ValueSet/tnm-praefix-cp-uicc"
         },
         "name": "ValueSet TNM Praefix CP UICC",
         "description": "Das ValueSet enthält die c und p Präfixe für die T-, N- oder M-Kategorien aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -380,7 +380,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-r-klassifikation-uicc"
+          "reference": "ValueSet/tnm-r-klassifikation-uicc"
         },
         "name": "ValueSet TNM Residualtumor- (R-)Klassifikation UICC",
         "description": "Das ValueSet enthält Codes für die TNM Residualtumor- (R-)Klassifikation.",
@@ -388,7 +388,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-s-serumtumormarker-uicc"
+          "reference": "ValueSet/tnm-s-serumtumormarker-uicc"
         },
         "name": "ValueSet TNM S Serumtumormarker UICC",
         "description": "Das ValueSet enthält die TNM Codes für Serumtumormarker aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -396,7 +396,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-stadien-uicc"
+          "reference": "ValueSet/tnm-stadien-uicc"
         },
         "name": "ValueSet TNM Stadien UICC",
         "description": "The ValueSet enthält Codes für die TNM-Stadien zur prognostischen Gruppeneinteilung von Patienten.",
@@ -404,7 +404,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-suffix-itc-uicc"
+          "reference": "ValueSet/tnm-suffix-itc-uicc"
         },
         "name": "ValueSet TNM Suffix ITC UICC",
         "description": "Das ValueSet enthält die isolierten Tumorzellen (ITC) Suffixe für die N- und M-Kategorien aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -412,7 +412,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-suffix-sn-uicc"
+          "reference": "ValueSet/tnm-suffix-sn-uicc"
         },
         "name": "ValueSet TNM Suffix SN UICC",
         "description": "Das ValueSet enthält das Schildwächterlymphknoten (Sentinel Lymph Node) Suffix für die N-Kategorie aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -420,7 +420,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-t-kategorie-typ-loinc"
+          "reference": "ValueSet/tnm-t-kategorie-typ-loinc"
         },
         "name": "ValueSet TNM T-Kategorie Typ LOINC",
         "description": "Das ValueSet enthält Codes zur Differenzierung der TNM Primärtumor (T) Kategorie als entweder klinisch (cT) oder pathologisch (pT).",
@@ -428,7 +428,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-t-kategorie-uicc"
+          "reference": "ValueSet/tnm-t-kategorie-uicc"
         },
         "name": "ValueSet TNM T-Kategorie UICC",
         "description": "Das ValueSet enthält die TNM T-Kategorie Codes aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -436,7 +436,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-t-multiplizitaet-uicc"
+          "reference": "ValueSet/tnm-t-multiplizitaet-uicc"
         },
         "name": "ValueSet TNM T Multiplizitaet UICC",
         "description": "Das ValueSet enthält die TNM Primärtumor Multiplizität Codes zur Verwendung mit dem m-Symbol aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -444,7 +444,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-tnm-v-veneninvasion-uicc"
+          "reference": "ValueSet/tnm-v-veneninvasion-uicc"
         },
         "name": "ValueSet TNM V-Deskriptor Veneninvasion UICC",
         "description": "Das ValueSet enthält die TNM Codes für die Beurteilung der Veneninvasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
@@ -452,7 +452,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-topographie-icd-o-3"
+          "reference": "ValueSet/topographie-icd-o-3"
         },
         "name": "ValueSet Topographie ICD-O-3",
         "description": "The ValueSet enthält die Topographie Codes aus der ICD-O-3.",
@@ -460,7 +460,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-topographie-snomed"
+          "reference": "ValueSet/topographie-snomed"
         },
         "name": "ValueSet Topographie SNOMED",
         "description": "The ValueSet enthält die Topographie Codes aus SNOMED CT.",
@@ -518,14 +518,6 @@
         },
         "name": "TumorstatusFernmetastasen",
         "description": "Tumorstatus Fernmetastasen nach ADT.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/UICCCS"
-        },
-        "name": "UICC-Klassifikation",
-        "description": "UICC-Klassifikation zum Staging einer Krebserkrankung.",
         "exampleBoolean": false
       },
       {

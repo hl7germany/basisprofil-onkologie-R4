@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_Pn_Perineurale_Invasion_UICC",
-  "id": "vs-tnm-pn-perineurale-invasion-uicc",
+  "id": "tnm-pn-perineurale-invasion-uicc",
   "title": "ValueSet TNM Pn-Deskriptor Perineurale Invasion UICC",
   "description": "Das ValueSet enthält die TNM Codes für den Grad der perineuralen Invasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
   "version": "0.1.0",

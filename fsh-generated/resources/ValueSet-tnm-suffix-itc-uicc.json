@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_Suffix_ITC_UICC",
-  "id": "vs-tnm-suffix-itc-uicc",
+  "id": "tnm-suffix-itc-uicc",
   "title": "ValueSet TNM Suffix ITC UICC",
   "description": "Das ValueSet enthält die isolierten Tumorzellen (ITC) Suffixe für die N- und M-Kategorien aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
   "version": "0.1.0",

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_V_Veneninvasion_UICC",
-  "id": "vs-tnm-v-veneninvasion-uicc",
+  "id": "tnm-v-veneninvasion-uicc",
   "title": "ValueSet TNM V-Deskriptor Veneninvasion UICC",
   "description": "Das ValueSet enthält die TNM Codes für die Beurteilung der Veneninvasion aus der UICC TNM - Klassifikation maligner Tumoren Achte Auflage.",
   "version": "0.1.0",

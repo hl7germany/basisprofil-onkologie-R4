@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_Stadien_UICC",
-  "id": "vs-tnm-stadien-uicc",
+  "id": "tnm-stadien-uicc",
   "title": "ValueSet TNM Stadien UICC",
   "description": "The ValueSet enthält Codes für die TNM-Stadien zur prognostischen Gruppeneinteilung von Patienten.",
   "version": "0.1.0",

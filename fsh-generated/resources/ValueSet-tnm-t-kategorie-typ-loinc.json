@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_TNM_T_Kategorie_Typ_LOINC",
-  "id": "vs-tnm-t-kategorie-typ-loinc",
+  "id": "tnm-t-kategorie-typ-loinc",
   "title": "ValueSet TNM T-Kategorie Typ LOINC",
   "description": "Das ValueSet enthält Codes zur Differenzierung der TNM Primärtumor (T) Kategorie als entweder klinisch (cT) oder pathologisch (pT).",
   "version": "0.1.0",

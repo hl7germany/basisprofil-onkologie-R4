@@ -54,7 +54,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-suffix-itc-sn-uicc"
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-suffix-sn-uicc"
         }
       }
     ]

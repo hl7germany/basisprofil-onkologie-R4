@@ -205,7 +205,7 @@
         },
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/onkologie/ValueSet/histopathological-grade-snomed"
+          "valueSet": "http://fhir.de/onkologie/ValueSet/histopathologisches-grading-snomed"
         }
       },
       {

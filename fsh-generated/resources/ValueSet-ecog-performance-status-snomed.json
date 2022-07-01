@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "VS_ECOG_Performance_Status_SNOMED",
-  "id": "vs-ecog-performance-status-snomed",
+  "id": "ecog-performance-status-snomed",
   "title": "ValueSet ECOG Performance Status SNOMED",
   "description": "The ValueSet enthält die ECOG Performance Status Codes aus SNOMED CT.",
   "version": "0.1.0",
