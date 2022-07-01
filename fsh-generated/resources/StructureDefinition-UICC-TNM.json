@@ -429,7 +429,7 @@
         "path": "Observation.component.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/onkologie/ValueSet/ValueSet/tnm-n-kategorie-typ-loinc"
+          "valueSet": "http://fhir.de/onkologie/ValueSet/tnm-n-kategorie-typ-loinc"
         }
       },
       {
