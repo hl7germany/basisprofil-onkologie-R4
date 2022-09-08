@@ -33,10 +33,13 @@ Description: "Observation-Profil für die UICC TNM - Klassifikation Maligner Tum
 * hasMember ^slicing.discriminator.type = #profile
 * hasMember ^slicing.discriminator.path = "resolve()"
 * hasMember ^slicing.rules = #open
-* hasMember contains R-Klassifikation 0..1
+* hasMember contains R-Klassifikation 0..1 and Histopathologisches-Grading 0..1
 * hasMember[R-Klassifikation] only Reference(SD_UICC_TNM_R_Klassifikation)
 * hasMember[R-Klassifikation] ^short = "Residualtumor- (R-)Klassifikation"
 * hasMember[R-Klassifikation] ^definition = "Das Fehlen oder Vorhandensein von Residualtumor (Resttumor) nach Behandlung wird durch die R-Klassifikation beschrieben."
+* hasMember[Histopathologisches-Grading] only Reference(SD_Histopathologisches_Grading_WHO)
+* hasMember[Histopathologisches-Grading] ^short = "Histopathologische Grading (\"G\")"
+* hasMember[R-Klassifikation] ^definition = "Die G-Klassifikation (G = grading) beschreibt die histopathologische Differenzierung eines malignen Tumors, die Relevanz für die Prognose des Patienten haben kann."
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
