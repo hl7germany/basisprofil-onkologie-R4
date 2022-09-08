@@ -344,8 +344,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "277650004",
-              "system": "http://snomed.info/sct",
+              "code": "42030-7",
+              "system": "http://loinc.org",
               "display": "m - Multiple tumors (tumor staging)"
             }
           ]

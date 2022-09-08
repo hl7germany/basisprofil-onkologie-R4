@@ -81,7 +81,7 @@ Description: "Observation-Profil für die UICC TNM - Klassifikation Maligner Tum
 * component[T-Code].value[x] from VS_TNM_T_Kategorie_UICC (required)
 * component[m-Symbol] ^short = "m-Symbol"
 * component[m-Symbol] ^definition = "Das Suffix „m“, in Klammern gesetzt, wird benutzt, um multiple Primärtumoren in einem anatomischen Bezirk anzuzeigen."
-* component[m-Symbol].code = SCT#277650004 "m - Multiple tumors (tumor staging)" //LOINC??
+* component[m-Symbol].code = LNC#42030-7 "m - Multiple tumors (tumor staging)" 
 * component[m-Symbol].value[x] only CodeableConcept
 * component[m-Symbol].value[x] from VS_TNM_T_Multiplizitaet_UICC (required)
 * component[N-Code] ^short = "N - Regionäre Lymphknoten"
@@ -297,7 +297,7 @@ Description: "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)."
 * component[T-Code].extension[SD_UICC_TNM_Praefix_CP].valueCodeableConcept = UICC#p "p"
 * component[T-Code].code = LNC#21899-0 "Primary tumor.pathology Cancer"
 * component[T-Code].valueCodeableConcept = UICC#T3 "T3"
-* component[m-Symbol].code = SCT#277650004 "m - Multiple tumors (tumor staging)"
+* component[m-Symbol].code = LNC#42030-7 "m - Multiple tumors (tumor staging)"
 * component[m-Symbol].valueCodeableConcept = UICC#m "(m)"
 * component[N-Code].extension[SD_UICC_TNM_Praefix_CP].valueCodeableConcept = UICC#p "p"
 * component[N-Code].code = LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
