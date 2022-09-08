@@ -137,7 +137,7 @@
         "path": "Observation.hasMember",
         "sliceName": "R-Klassifikation",
         "short": "Residualtumor- (R-)Klassifikation",
-        "definition": "Die G-Klassifikation (G = grading) beschreibt die histopathologische Differenzierung eines malignen Tumors, die Relevanz für die Prognose des Patienten haben kann.",
+        "definition": "Das Fehlen oder Vorhandensein von Residualtumor (Resttumor) nach Behandlung wird durch die R-Klassifikation beschrieben.",
         "min": 0,
         "max": "1",
         "type": [
@@ -154,6 +154,7 @@
         "path": "Observation.hasMember",
         "sliceName": "Histopathologisches-Grading",
         "short": "Histopathologische Grading (\"G\")",
+        "definition": "Die G-Klassifikation (G = grading) beschreibt die histopathologische Differenzierung eines malignen Tumors, die Relevanz für die Prognose des Patienten haben kann.",
         "min": 0,
         "max": "1",
         "type": [
