@@ -528,15 +528,8 @@ Description: "Observation-Profil für die Beschreibung des Tumor Gradings nach d
 * subject 1..1
 * subject only Reference(Patient)
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
-* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
-* valueCodeableConcept.coding ^slicing.rules = #open
-* valueCodeableConcept.coding contains
-    histologicGradeSnomed 1..1
-* valueCodeableConcept.coding[histologicGradeSnomed] from VS_Histopathologisches_Grading_SNOMED (required)
-* valueCodeableConcept.coding[histologicGradeSnomed] ^patternCoding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding[histologicGradeSnomed].system 1..
-* valueCodeableConcept.coding[histologicGradeSnomed].code 1..
+* valueCodeableConcept from VS_Histopathologisches_Grading_SNOMED (required)
+
 
 Instance: example-histologic-grade
 InstanceOf: SD_Histopathologisches_Grading_WHO
@@ -548,4 +541,4 @@ Description: "Example Tumor Grading nach vierstufigem Schema."
 * code.coding[snomed] = SCT#371469007 "Histologic grade of neoplasm (observable entity)"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-03-07"
-* valueCodeableConcept.coding[histologicGradeSnomed] = SCT#54102005 "G1 grade (finding)"
+* valueCodeableConcept = SCT#54102005 "G1 grade (finding)"

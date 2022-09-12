@@ -30,18 +30,18 @@
       }
     ]
   },
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "54102005",
-        "display": "G1 grade (finding)"
-      }
-    ]
-  },
   "status": "final",
   "subject": {
     "reference": "ExamplePatient"
   },
-  "effectiveDateTime": "2022-03-07"
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "54102005",
+        "system": "http://snomed.info/sct",
+        "display": "G1 grade (finding)"
+      }
+    ]
+  }
 }
